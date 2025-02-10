@@ -1,6 +1,6 @@
 [
     {
-        "image": "public/obra/Apunts figura/Alba III.jpg",
+        "image": "src/assets/obra/Apunts figura/Alba III.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -11,7 +11,7 @@
       "name": "Alba III"
     },
     {
-        "image": "public/obra/Apunts figura/Alba II.jpg",
+        "image": "src/assets/obra/Apunts figura/Alba II.jpg",
         "size": {
         "width": 65,
         "height": 81,

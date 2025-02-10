@@ -1,7 +1,8 @@
 <template>
     <div class="gallery">
+        {{ imgUrls }}
       <div v-for="(image, index) in images" :key="index" class="gallery-item">
-        <img :src="image.image" :alt="image.name" />
+        <img :src="`${github}/${image.image}`" :alt="image.name" />
       </div>
     </div>
   </template>
@@ -14,8 +15,13 @@
         required: true,
       },
     },
+    data() {
+    return {
+      github: '/blob/main/'
+    }
+  }
   };
-  </script>
+</script>
   
   <style scoped>
 .gallery {
