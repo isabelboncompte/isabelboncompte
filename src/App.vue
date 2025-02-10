@@ -1,5 +1,5 @@
 <script setup>
-import apunts_figura from '/isabelboncompte/src/assets/obra/apunts_figura.json'
+import apunts_figura from '@/assets/obra/apunts_figura.json'
 import Gallery from './components/Gallery.vue'
 </script>
 
