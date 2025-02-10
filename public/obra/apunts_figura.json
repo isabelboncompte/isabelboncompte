@@ -1,6 +1,6 @@
 [
     {
-        "image": "src/assets/obra/Apunts figura/Alba III.jpg",
+        "image": "public/obra/Apunts figura/Alba III.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -11,7 +11,7 @@
       "name": "Alba III"
     },
     {
-        "image": "src/assets/obra/Apunts figura/Alba II.jpg",
+        "image": "public/obra/Apunts figura/Alba II.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -22,7 +22,7 @@
       "name": "Alba II"
     },
     {
-        "image": "src/assets/obra/Apunts figura/Lina IX.jpg",
+        "image": "public/obra/Apunts figura/Lina IX.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -33,7 +33,7 @@
       "name": "Lina IX"
     },
     {
-        "image": "src/assets/obra/Apunts figura/Lina VIII.jpg",
+        "image": "public/obra/Apunts figura/Lina VIII.jpg",
         "size": {
         "width": 81,
         "height": 65,
@@ -44,7 +44,7 @@
       "name": "Lina VIII"
     },
     {
-        "image": "src/assets/obra/Apunts figura/Lina VII.jpg",
+        "image": "public/obra/Apunts figura/Lina VII.jpg",
         "size": {
         "width": 81,
         "height": 65,
@@ -55,7 +55,7 @@
       "name": "Lina  VII"
     },
     {
-        "image": "src/assets/obra/Apunts figura/Lina VI.jpg",
+        "image": "public/obra/Apunts figura/Lina VI.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -66,7 +66,7 @@
       "name": "Lina VI"
     },
     {
-        "image": "src/assets/obra/Apunts figura/Lina V.jpg",
+        "image": "public/obra/Apunts figura/Lina V.jpg",
         "size": {
         "width": 81,
         "height": 65,
@@ -77,7 +77,7 @@
       "name": "Lina V"
     },
     {
-        "image": "src/assets/obra/Apunts figura/Lina IV.jpg",
+        "image": "public/obra/Apunts figura/Lina IV.jpg",
         "size": {
         "width": 65,
         "height": 81,
