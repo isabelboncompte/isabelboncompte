@@ -1,0 +1,91 @@
+[
+    {
+        "image": "public/obra/Apunts figura/Alba III.jpg",
+        "size": {
+        "width": 65,
+        "height": 81,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2024,
+      "name": "Alba III"
+    },
+    {
+        "image": "public/obra/Apunts figura/Alba II.jpg",
+        "size": {
+        "width": 65,
+        "height": 81,
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2024,
+      "name": "Alba II"
+    },
+    {
+        "image": "public/obra/Apunts figura/Lina IX.jpg",
+        "size": {
+        "width": 65,
+        "height": 81,
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2024,
+      "name": "Lina IX"
+    },
+    {
+        "image": "public/obra/Apunts figura/Lina VIII.jpg",
+        "size": {
+        "width": 81,
+        "height": 65,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2024,
+      "name": "Lina VIII"
+    },
+    {
+        "image": "public/obra/Apunts figura/Lina VII.jpg",
+        "size": {
+        "width": 81,
+        "height": 65,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2024,
+      "name": "Lina  VII"
+    },
+    {
+        "image": "public/obra/Apunts figura/Lina VI.jpg",
+        "size": {
+        "width": 65,
+        "height": 81,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2024,
+      "name": "Lina VI"
+    },
+    {
+        "image": "public/obra/Apunts figura/Lina V.jpg",
+        "size": {
+        "width": 81,
+        "height": 65,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2024,
+      "name": "Lina V"
+    },
+    {
+        "image": "public/obra/Apunts figura/Lina IV.jpg",
+        "size": {
+        "width": 65,
+        "height": 81,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2024,
+      "name": "Lina IV"
+    }
+  ]
+  
