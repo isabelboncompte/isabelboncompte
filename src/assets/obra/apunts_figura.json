@@ -1,6 +1,6 @@
 [
     {
-        "image": "src/assets/obra/Apunts figura/Alba III.jpg",
+        "image": "/assets/obra/Apunts figura/Alba III.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -11,7 +11,7 @@
       "name": "Alba III"
     },
     {
-        "image": "src/assets/obra/Apunts figura/Alba II.jpg",
+        "image": "/assets/obra/Apunts figura/Alba II.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -22,7 +22,7 @@
       "name": "Alba II"
     },
     {
-        "image": "public/obra/Apunts figura/Lina IX.jpg",
+        "image": "/assets/obra/Apunts figura/Lina IX.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -33,7 +33,7 @@
       "name": "Lina IX"
     },
     {
-        "image": "public/obra/Apunts figura/Lina VIII.jpg",
+        "image": "/assets/obra/Apunts figura/Lina VIII.jpg",
         "size": {
         "width": 81,
         "height": 65,
@@ -44,7 +44,7 @@
       "name": "Lina VIII"
     },
     {
-        "image": "public/obra/Apunts figura/Lina VII.jpg",
+        "image": "/assets/obra/Apunts figura/Lina VII.jpg",
         "size": {
         "width": 81,
         "height": 65,
@@ -55,7 +55,7 @@
       "name": "Lina  VII"
     },
     {
-        "image": "public/obra/Apunts figura/Lina VI.jpg",
+        "image": "/assets/obra/Apunts figura/Lina VI.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -66,7 +66,7 @@
       "name": "Lina VI"
     },
     {
-        "image": "public/obra/Apunts figura/Lina V.jpg",
+        "image": "/assets/obra/Apunts figura/Lina V.jpg",
         "size": {
         "width": 81,
         "height": 65,
@@ -77,7 +77,7 @@
       "name": "Lina V"
     },
     {
-        "image": "public/obra/Apunts figura/Lina IV.jpg",
+        "image": "/assets/obra/Apunts figura/Lina IV.jpg",
         "size": {
         "width": 65,
         "height": 81,
@@ -86,6 +86,226 @@
       "technique": "Oli sobre cartró",
       "year": 2024,
       "name": "Lina IV"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Lina III.jpg",
+        "size": {
+        "width": 65,
+        "height": 81,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Lina III"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Lina III.jpg",
+        "size": {
+        "width": 81,
+        "height": 65,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Lina III"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Lina II.jpg",
+        "size": {
+        "width": 65,
+        "height": 81,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Lina II"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Lina I.jpg",
+        "size": {
+        "width": 65,
+        "height": 81,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Lina I"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Louise III.jpg",
+        "size": {
+        "width": 65,
+        "height": 81,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Lousie III"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Apunt.jpg",
+        "size": {
+        "width": 30,
+        "height": 57,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Apunt"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Louise II.jpg",
+        "size": {
+        "width": 52,
+        "height": 75,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Lousie II"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Model A.jpg",
+        "size": {
+        "width": 35,
+        "height": 37,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2016,
+      "name": "Model A"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Model B.jpg",
+        "size": {
+        "width": 27,
+        "height": 27,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2016,
+      "name": "Model B"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Model C.jpg",
+        "size": {
+        "width": 26,
+        "height": 37,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2016,
+      "name": "Model C"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Model D.jpg",
+        "size": {
+        "width": 33,
+        "height": 41,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró entelat",
+      "year": 2016,
+      "name": "Model D"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Model E.jpg",
+        "size": {
+        "width": 37,
+        "height": 52,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró entelat",
+      "year": 2018,
+      "name": "Model E"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Model F.jpg",
+        "size": {
+        "width": 37,
+        "height": 52,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró entelat",
+      "year": 2018,
+      "name": "Model F"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Model G.jpg",
+        "size": {
+        "width": 40,
+        "height": 50,
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2018,
+      "name": "Model G"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Jugant la vida.jpg",
+        "size": {
+        "width": 81,
+        "height": 65,
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2017,
+      "name": "Jugant la vida"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Prova.jpg",
+        "size": {
+        "width": 12,
+        "height": 12,
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2022,
+      "name": "Prova"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Figura en butaca.jpg",
+        "size": {
+        "width": 75,
+        "height": 52,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Figura en butaca"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Sessió d'apunts.jpg",
+        "size": {
+        "width": 75,
+        "height": 52,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Sessió d'apunts"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Sorrut.jpg",
+        "size": {
+        "width": 81,
+        "height": 65,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Sorrut"
+    },
+    {
+        "image": "/assets/obra/Apunts figura/Louise I.jpg",
+        "size": {
+        "width": 52,
+        "height": 75,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Louise I"
     }
   ]
   

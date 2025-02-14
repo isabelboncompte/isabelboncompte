@@ -2,12 +2,12 @@
     <div class="gallery">
         {{ imgUrls }}
       <div v-for="(image, index) in images" :key="index" class="gallery-item">
-        <img :src="`${github}/${image.image}`" :alt="image.name" />
+        <img :src="`${github}${image.image}`" :alt="image.name" />
       </div>
     </div>
   </template>
-  
-  <script>
+
+<script>
   export default {
     props: {
       images: {
@@ -17,7 +17,7 @@
     },
     data() {
     return {
-      github: '/blob/main/'
+      github: 'https://raw.githubusercontent.com/isabelboncompte/isabelboncompte/refs/heads/main/src'
     }
   }
   };
