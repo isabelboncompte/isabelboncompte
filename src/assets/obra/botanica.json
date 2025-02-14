@@ -83,8 +83,283 @@
         "height": 28,
         "depth": null
       },
-      "technique": "Oli sobre tablex",
+      "technique": "Oli sobre fusta",
       "year": 2023,
       "name": "Barbes de frare II"
+    },
+    {
+      "image": "/assets/obra/Botànica/Sanguinyol I.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2022,
+      "name": "Sanguinyol I"
+    },
+    {
+      "image": "/assets/obra/Botànica/Sanguinyol II.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2022,
+      "name": "Sanguinyol II"
+    },
+    {
+      "image": "/assets/obra/Botànica/Sanguinyol III.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2022,
+      "name": "Sanguinyol III"
+    },
+    {
+      "image": "/assets/obra/Botànica/Llorer III.jpg",
+      "size": {
+        "width": 12,
+        "height": 39,
+        "depth": null
+      },
+      "technique": "Acrílic sobre fusta",
+      "year": 2022,
+      "name": "Llorer III"
+    },
+    {
+      "image": "/assets/obra/Botànica/Ceratophyllum-demersum.jpg",
+      "size": {
+        "width": 27,
+        "height": 35,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2022,
+      "name": "Ceratophyllum-demersum"
+    },
+    {
+      "image": "/assets/obra/Botànica/Iris Pseudacorus.jpg",
+      "size": {
+        "width": 27,
+        "height": 35,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2022,
+      "name": "Iris Pseudacorus"
+    },
+    {
+      "image": "/assets/obra/Botànica/Llorer II.jpg",
+      "size": {
+        "width": 12,
+        "height": 39,
+        "depth": null
+      },
+      "technique": "Acrílic sobre fusta",
+      "year": 2022,
+      "name": "Llorer II"
+    },
+    {
+      "image": "/assets/obra/Botànica/Phragmites-australis.jpg",
+      "size": {
+        "width": 27,
+        "height": 35,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2022,
+      "name": "Phragmites-australis"
+    },
+    {
+      "image": "/assets/obra/Botànica/Typha-angustifolia.jpg",
+      "size": {
+        "width": 27,
+        "height": 35,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2022,
+      "name": "Typha-angustifolia"
+    },
+    {
+      "image": "/assets/obra/Botànica/Llorer I.jpg",
+      "size": {
+        "width": 12,
+        "height": 12,
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2022,
+      "name": "Llorer I"
+    },
+    {
+      "image": "/assets/obra/Botànica/Càdec I.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2021,
+      "name": "Càdec I"
+    },
+    {
+      "image": "/assets/obra/Botànica/Càdec II.jpg",
+      "size": {
+        "width": 10,
+        "height": 15,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2021,
+      "name": "Càdec II"
+    },
+    {
+      "image": "/assets/obra/Botànica/Codonys.jpg",
+      "size": {
+        "width": 42,
+        "height": 29,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2020,
+      "name": "Codonys"
+    },
+    {
+      "image": "/assets/obra/Botànica/Pomerola.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2020,
+      "name": "Pomerola"
+    },
+    {
+      "image": "/assets/obra/Botànica/Euphorbia.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2019,
+      "name": "Euphorbia"
+    },
+    {
+      "image": "/assets/obra/Botànica/Pistacia Lentiscus.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2018,
+      "name": "Pistacia Lentiscus"
+    },
+    {
+      "image": "/assets/obra/Botànica/Crataegus Monogina.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2017,
+      "name": "Crateagus Monogina"
+    },
+    {
+      "image": "/assets/obra/Botànica/Sotabosc d'Alzinar.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2016,
+      "name": "Sotabosc d'Alzinar"
+    },
+    {
+      "image": "/assets/obra/Botànica/Rosa Canina.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2015,
+      "name": "Rosa Canina"
+    },
+    {
+      "image": "/assets/obra/Botànica/Sorbus Domèstica.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2014,
+      "name": "Sorbus Domèstica"
+    },
+    {
+      "image": "/assets/obra/Botànica/Smilax Aspera.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2013,
+      "name": "Smilax Aspera"
+    },
+    {
+      "image": "/assets/obra/Botànica/Acer Opalus.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2012,
+      "name": "Acer Opalus"
+    },
+    {
+      "image": "/assets/obra/Botànica/Umbilicus Rupestris.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2011,
+      "name": "Umbilicus Rupestris"
+    },
+    {
+      "image": "/assets/obra/Botànica/Viscum Album.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2010,
+      "name": "Viscum Album"
+    },
+    {
+      "image": "/assets/obra/Botànica/Ruscus Aculeatus.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2009,
+      "name": "Ruscus Aculeatus"
     }
 ]
