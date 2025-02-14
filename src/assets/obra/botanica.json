@@ -2,12 +2,89 @@
     {
       "image": "/assets/obra/Botànica/Roure reboll.jpg",
       "size": {
-      "width": 20,
-      "height": 20,
-      "depth": null
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2024,
+      "name": "Roure reboll"
     },
-    "technique": "Aquarel·la sobre paper",
-    "year": 2024,
-    "name": "Roure reboll"
-  }
+    {
+      "image": "/assets/obra/Botànica/Hortènsia d'hivern.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Pastel sobre cartolina",
+      "year": 2024,
+      "name": "Hortènsia d'hivern"
+    },
+    {
+      "image": "/assets/obra/Botànica/Rosella.jpg",
+      "size": {
+        "width": 23,
+        "height": 32,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2024,
+      "name": "Rosella"
+    },
+    {
+      "image": "/assets/obra/Botànica/Lliris.jpg",
+      "size": {
+        "width": 24,
+        "height": 40,
+        "depth": null
+      },
+      "technique": "Oli sobre cartó",
+      "year": 2024,
+      "name": "Lliris"
+    },
+    {
+      "image": "/assets/obra/Botànica/Barbes de frare I.jpg",
+      "size": {
+        "width": 20,
+        "height": 20,
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2023,
+      "name": "Barbes de frare I"
+    },
+    {
+      "image": "/assets/obra/Botànica/Oliveres de la Maria Creu.jpg",
+      "size": {
+        "width": 20,
+        "height": 14.5,
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2023,
+      "name": "Oliveres de la Maria Creu"
+    },
+    {
+      "image": "/assets/obra/Botànica/Barbes de Frare III.jpg",
+      "size": {
+        "width": 30,
+        "height": 57,
+        "depth": null
+      },
+      "technique": "Oli sobre tablex",
+      "year": 2023,
+      "name": "Barbes de frare III"
+    },
+    {
+      "image": "/assets/obra/Botànica/Barbes de Frare II.jpg",
+      "size": {
+        "width": 28,
+        "height": 28,
+        "depth": null
+      },
+      "technique": "Oli sobre tablex",
+      "year": 2023,
+      "name": "Barbes de frare II"
+    }
 ]
