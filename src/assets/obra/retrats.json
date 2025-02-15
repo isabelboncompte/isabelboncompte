@@ -1,0 +1,299 @@
+[
+    {
+      "image": "/assets/obra/Retrats/Maria a l'hivern.jpg",
+      "size": {
+        "width": "27",
+        "height": "35",
+        "depth": null
+      },
+      "technique": "Oli sobre tela",
+      "year": 2023,
+      "name": "Maria a l'hivern"
+    },
+    {
+      "image": "/assets/obra/Retrats/Atul I.jpg",
+      "size": {
+        "width": "52",
+        "height": "75",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Atul I"
+    },
+    {
+      "image": "/assets/obra/Retrats/Atul II.jpg",
+      "size": {
+        "width": "52",
+        "height": "75",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Atul II"
+    },
+    {
+      "image": "/assets/obra/Retrats/Autorretrat I.jpg",
+      "size": {
+        "width": "20",
+        "height": "34",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2023,
+      "name": "Autorretrat I"
+    },
+    {
+      "image": "/assets/obra/Retrats/Llegint a Capafonts.jpg",
+      "size": {
+        "width": "116",
+        "height": "89",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2023,
+      "name": "Llegint a Capafonts"
+    },
+    {
+      "image": "/assets/obra/Retrats/Autorretrat II.jpg",
+      "size": {
+        "width": "17",
+        "height": "24",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Autorretrat II"
+    },
+    {
+      "image": "/assets/obra/Retrats/Maria dormint.jpg",
+      "size": {
+        "width": "30",
+        "height": "30",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Maria dormint"
+    },
+    {
+      "image": "/assets/obra/Retrats/Aprenent amb Velázquez II.jpg",
+      "size": {
+        "width": "18",
+        "height": "24",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Aprenent amb Velázquez II"
+    },
+    {
+      "image": "/assets/obra/Retrats/Aprenent amb Velázquez I.jpg",
+      "size": {
+        "width": "35",
+        "height": "35",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Aprenent amb Velázquez I"
+    },
+    {
+      "image": "/assets/obra/Retrats/Gabriel.jpg",
+      "size": {
+        "width": "25",
+        "height": "26",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Gabriel"
+    },
+    {
+      "image": "/assets/obra/Retrats/Record de 1985.jpg",
+      "size": {
+        "width": "24",
+        "height": "18",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Record de 1985"
+    },
+    {
+      "image": "/assets/obra/Retrats/Autorretrat amb arracada.jpg",
+      "size": {
+        "width": "18",
+        "height": "12",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Autorretrat amb arracada"
+    },
+    {
+      "image": "/assets/obra/Retrats/Noia.jpg",
+      "size": {
+        "width": "52",
+        "height": "75",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2019,
+      "name": "Noia"
+    },
+    {
+      "image": "/assets/obra/Retrats/M.Montefeltro.jpg",
+      "size": {
+        "width": "37",
+        "height": "52",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2018,
+      "name": "M.Montefeltro"
+    },
+    {
+      "image": "/assets/obra/Retrats/Susana y sus mundos.jpg",
+      "size": {
+        "width": "29",
+        "height": "33",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2018,
+      "name": "Susana y sus mundos"
+    },
+    {
+      "image": "/assets/obra/Retrats/M.A.Anglada.jpg",
+      "size": {
+        "width": "75",
+        "height": "52",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2019,
+      "name": "M.A.Anglada"
+    },
+    {
+      "image": "/assets/obra/Retrats/Buscant.jpg",
+      "size": {
+        "width": "75",
+        "height": "52",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2019,
+      "name": "Buscant"
+    },
+    {
+      "image": "/assets/obra/Retrats/Robert.jpg",
+      "size": {
+        "width": "30",
+        "height": "35",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2018,
+      "name": "Robert"
+    },
+    {
+      "image": "/assets/obra/Retrats/Maria I.jpg",
+      "size": {
+        "width": "26",
+        "height": "37",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2018,
+      "name": "Maria I"
+    },
+    {
+      "image": "/assets/obra/Retrats/Maria II.jpg",
+      "size": {
+        "width": "30",
+        "height": "35",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2018,
+      "name": "Maria II"
+    },
+    {
+      "image": "/assets/obra/Retrats/Kathe Kollowitz.jpg",
+      "size": {
+        "width": "43",
+        "height": "52",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2018,
+      "name": "Kathe Kollowitz"
+    },
+    {
+      "image": "/assets/obra/Retrats/Frida.jpg",
+      "size": {
+        "width": "37",
+        "height": "52",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2018,
+      "name": "Frida"
+    },
+    {
+      "image": "/assets/obra/Retrats/Una maternitat.jpg",
+      "size": {
+        "width": "52",
+        "height": "75",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2016,
+      "name": "Una maternitat"
+    },
+    {
+      "image": "/assets/obra/Retrats/Jove professional.jpg",
+      "size": {
+        "width": "52",
+        "height": "75",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2016,
+      "name": "Jove professional"
+    },
+    {
+      "image": "/assets/obra/Retrats/Camí de l'arquitectura a l'art.jpg",
+      "size": {
+        "width": "52",
+        "height": "75",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2016,
+      "name": "Camí de l'arquitectura a l'art"
+    },
+    {
+      "image": "/assets/obra/Retrats/Moment.jpg",
+      "size": {
+        "width": "52",
+        "height": "75",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2016,
+      "name": "Moment"
+    },
+    {
+      "image": "/assets/obra/Retrats/Els meus pares a Portbou.jpg",
+      "size": {
+        "width": "70",
+        "height": "70",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2018,
+      "name": "Els meus pares a Portbou"
+    }
+]

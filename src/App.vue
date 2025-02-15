@@ -13,13 +13,14 @@ import murs_i_camins from './assets/obra/murs_i_camins.json'
 import natures_mortes from './assets/obra/natures_mortes.json'
 import picorandan from './assets/obra/picorandan.json'
 import postals from './assets/obra/postals.json'
+import retrats from './assets/obra/retrats.json'
 
 import Gallery from './components/Gallery.vue'
 </script>
 
 <template>
   <div>
-    <Gallery :images="postals" />
+    <Gallery :images="retrats" />
   </div>
 </template>
 

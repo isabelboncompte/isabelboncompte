@@ -25,7 +25,7 @@
   
   <style scoped>
 .gallery {
-  column-count: 4; /* adjust the number of columns as needed */
+  column-count: 3; /* adjust the number of columns as needed */
   column-gap: 8px; /* adjust the gap as needed */
   row-gap: 10px;
 }
