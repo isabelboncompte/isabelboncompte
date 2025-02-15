@@ -1,0 +1,299 @@
+[
+    {
+      "image": "/assets/obra/Murs i camins/Marge de pedra seca.jpg",
+      "size": {
+        "width": "24",
+        "height": "18",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2024,
+      "name": "Marge de pedra seca"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Paret del brugent al pont vell.jpg",
+      "size": {
+        "width": "240",
+        "height": "80",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2024,
+      "name": "Paret del brugent al Pont Vell"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Davant del molí del pont vell.jpg",
+      "size": {
+        "width": "33",
+        "height": "25",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2023,
+      "name": "Davant el molí del Pont Vell"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Marge esquerre del Brugent.jpg",
+      "size": {
+        "width": "72",
+        "height": "25",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Marge esquerre del Brugent"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Marge esquerre del Brugent (detall).jpg",
+      "size": {
+        "width": "80",
+        "height": "80",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2023,
+      "name": "Marge esquerre del Brugent (detall)"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Mur desfet amb molsa.jpg",
+      "size": {
+        "width": "100",
+        "height": "100",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2023,
+      "name": "Mur desfet amb molsa"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Mur amb heura.jpg",
+      "size": {
+        "width": "52",
+        "height": "37",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2023,
+      "name": "Mur amb heura"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí del Pont Vell II.jpg",
+      "size": {
+        "width": "34",
+        "height": "27",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Camí del pont vell II"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí de les tres platgetes (Portbou).jpg",
+      "size": {
+        "width": "75",
+        "height": "18",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Camí de les tres platgetes (Portbou)"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí a l'observatori de les aus (Els Plans de Sió).jpg",
+      "size": {
+        "width": "35",
+        "height": "15",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Camí a l'observatori de les aus (Els Plans de Sió)"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí a la peixera (Els Plans de Sió).jpg",
+      "size": {
+        "width": "35",
+        "height": "15",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Camí a la peixera (Els Plans de Sió)"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Mur amb molsa III.jpg",
+      "size": {
+        "width": "101",
+        "height": "72",
+        "depth": null
+      },
+      "technique": "Rotulador sense paper",
+      "year": 2022,
+      "name": "Mur amb molsa III"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Mur amb molsa II.jpg",
+      "size": {
+        "width": "33",
+        "height": "22",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2022,
+      "name": "Mur amb molsa II"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí avall de la Barceloneta (Capafonts).jpg",
+      "size": {
+        "width": "21",
+        "height": "32",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Camí avall de la Barceloneta (Capafonts)"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí antic a Alcover (Capafonts).jpg",
+      "size": {
+        "width": "18",
+        "height": "26",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Camí antic a Alcover (Capafonts)"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí M.D. Les Salines (Maçanet de Cabrenys).jpg",
+      "size": {
+        "width": "18",
+        "height": "24",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Camí M.D. Les Salines (Maçanet de Cabrenys)"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí de Barrulles.jpg",
+      "size": {
+        "width": "33",
+        "height": "24",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2022,
+      "name": "Camí de Barrulles"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/En un camí de les Pallargues I.jpg",
+      "size": {
+        "width": "15",
+        "height": "10",
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2021,
+      "name": "En un camí de les Pallargues I"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/En un camí de les Pallargues II.jpg",
+      "size": {
+        "width": "15",
+        "height": "10",
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2021,
+      "name": "En un camí de les Pallargues II"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí del Pont Vell I.jpg",
+      "size": {
+        "width": "21",
+        "height": "17",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2021,
+      "name": "Camí del Pont Vell I"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí al Brugent.jpg",
+      "size": {
+        "width": "23",
+        "height": "47",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2021,
+      "name": "Camí al Brugent"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Mur amb molsa I.jpg",
+      "size": {
+        "width": "65",
+        "height": "54",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2021,
+      "name": "Mur amb molsa I"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Mur ocult I.jpg",
+      "size": {
+        "width": "58",
+        "height": "43",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2021,
+      "name": "Mur ocult I"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Mur ocult II.jpg",
+      "size": {
+        "width": "46",
+        "height": "39",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2021,
+      "name": "Mur ocult II"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Camí I.jpg",
+      "size": {
+        "width": "28",
+        "height": "28",
+        "depth": null
+      },
+      "technique": "Mixta sobre tablex",
+      "year": 2021,
+      "name": "Camí I"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Mur vegetal I.jpg",
+      "size": {
+        "width": "56",
+        "height": "17",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2021,
+      "name": "Mur vegetal I"
+    },
+    {
+      "image": "/assets/obra/Murs i camins/Mur vegetal II.jpg",
+      "size": {
+        "width": "56",
+        "height": "17",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2021,
+      "name": "Mur vegetal II"
+    }
+]

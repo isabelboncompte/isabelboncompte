@@ -1,0 +1,178 @@
+[
+    {
+      "image": "/assets/obra/Miscel·lània/Tres roses.jpg",
+      "size": {
+        "width": "28",
+        "height": "38",
+        "depth": null
+      },
+      "technique": "Collage",
+      "year": 2024,
+      "name": "Tres roses"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Tardor d'avellaner.jpg",
+      "size": {
+        "width": "116",
+        "height": "89",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2024,
+      "name": "Tardor d'avellaner"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/La ninota.jpg",
+      "size": {
+        "width": "130",
+        "height": "97",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2024,
+      "name": "La Ninota"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/La casa de les idees.jpg",
+      "size": {
+        "width": "10",
+        "height": "15",
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2022,
+      "name": "La casa de les idees"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/La casa dels pensaments.jpg",
+      "size": {
+        "width": "10",
+        "height": "15",
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2022,
+      "name": "La casa dels pensaments"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/La casa dels somnis.jpg",
+      "size": {
+        "width": "10",
+        "height": "15",
+        "depth": null
+      },
+      "technique": "Aquarel·la",
+      "year": 2022,
+      "name": "La casa dels somnis"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Böcklin, Javacheff i Verdaguer en rose poudre i pedra de Montjuic.jpg",
+      "size": {
+        "width": "44",
+        "height": "30",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2022,
+      "name": "Böcklin, Javacheff i Verdaguer en rose poudre i pedra de Montjuic"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Sant Quirze de Pedret.jpg",
+      "size": {
+        "width": "37",
+        "height": "26",
+        "depth": null
+      },
+      "technique": "Oli sobre cartó",
+      "year": 2021,
+      "name": "Sant Quirze de Pedret"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Joc de construcció.jpg",
+      "size": {
+        "width": "43",
+        "height": "27",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2020,
+      "name": "Joc de construcció"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Maud.jpg",
+      "size": {
+        "width": "21",
+        "height": "29",
+        "depth": null
+      },
+      "technique": "Collage",
+      "year": 2020,
+      "name": "Maud"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Joc de taula del nombre d'or I.jpg",
+      "size": {
+        "width": null,
+        "height": null,
+        "depth": null
+      },
+      "technique": null,
+      "year": 2015,
+      "name": "Joc de taula del nombre d'or I"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Joc de taula del nombre d'or II.jpg",
+      "size": {
+        "width": null,
+        "height": null,
+        "depth": null
+      },
+      "technique": null,
+      "year": 2015,
+      "name": "Joc de taula del nombre d'or II"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Joc de taula del nombre d'or III.jpg",
+      "size": {
+        "width": null,
+        "height": null,
+        "depth": null
+      },
+      "technique": null,
+      "year": 2015,
+      "name": "Joc de taula del nombre d'or III"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Joc de taula del nombre d'or IV.jpg",
+      "size": {
+        "width": null,
+        "height": null,
+        "depth": null
+      },
+      "technique": null,
+      "year": 2015,
+      "name": "Joc de taula del nombre d'or IV"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Il Redentore.jpg",
+      "size": {
+        "width": "162",
+        "height": "114",
+        "depth": null
+      },
+      "technique": "Acrílic",
+      "year": 1994,
+      "name": "Il Redentore"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Brunelleschi.jpg",
+      "size": {
+        "width": "97",
+        "height": "130",
+        "depth": null
+      },
+      "technique": "Acrílic sobre tela",
+      "year": 1964,
+      "name": "Brunelleschi"
+    }
+]
