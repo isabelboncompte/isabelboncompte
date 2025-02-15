@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import apunts_figura from './assets/obra/apunts_figura.json'
 import apunts_paisatge from './assets/obra/apunts_paisatge.json'
 import botanica from './assets/obra/botanica.json'
@@ -16,11 +16,20 @@ import postals from './assets/obra/postals.json'
 import retrats from './assets/obra/retrats.json'
 
 import Gallery from './components/Gallery.vue'
+import { RouterView } from 'vue-router'
+import MenuHeader from './components/MenuHeader.vue'
+
+export default {
+  components: { MenuHeader, RouterView }
+}
 </script>
 
 <template>
   <div>
-    <Gallery :images="retrats" />
+    <MenuHeader />
+    <RouterView />
+
+    <!--Gallery :images="retrats" /-->
   </div>
 </template>
 
