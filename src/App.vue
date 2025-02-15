@@ -10,13 +10,16 @@ import gravat from './assets/obra/gravat.json'
 import homenatge_a_chantal_maillard from './assets/obra/homenatge_a_chantal_maillard.json'
 import miscellania from './assets/obra/miscellania.json'
 import murs_i_camins from './assets/obra/murs_i_camins.json'
+import natures_mortes from './assets/obra/natures_mortes.json'
+import picorandan from './assets/obra/picorandan.json'
+import postals from './assets/obra/postals.json'
 
 import Gallery from './components/Gallery.vue'
 </script>
 
 <template>
   <div>
-    <Gallery :images="murs_i_camins" />
+    <Gallery :images="postals" />
   </div>
 </template>
 

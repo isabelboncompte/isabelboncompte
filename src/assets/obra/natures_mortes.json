@@ -1,0 +1,145 @@
+[
+    {
+      "image": "/assets/obra/Natures Mortes/Copa.jpg",
+      "size": {
+        "width": "20",
+        "height": "28",
+        "depth": null
+      },
+      "technique": "Aquarel·la sobre paper",
+      "year": 2024,
+      "name": "Copa"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Peres.jpg",
+      "size": {
+        "width": "38",
+        "height": "10",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2023,
+      "name": "Peres"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Codony en blanc.jpg",
+      "size": {
+        "width": "23",
+        "height": "23",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Codony en blanc"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Codony en rosa.jpg",
+      "size": {
+        "width": "23",
+        "height": "23",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Codony en rosa"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Codony en gris.jpg",
+      "size": {
+        "width": "23",
+        "height": "23",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Codony en gris"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Codony en verd.jpg",
+      "size": {
+        "width": "23",
+        "height": "23",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Codony en verd"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Codony en vermell.jpg",
+      "size": {
+        "width": "23",
+        "height": "23",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Codony en vermell"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Tisores de podar.jpg",
+      "size": {
+        "width": "37",
+        "height": "53",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Tisores de podar"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Fruitera en temps difícils.jpg",
+      "size": {
+        "width": "37",
+        "height": "53",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Fruitera en temps difícils"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Alumini.jpg",
+      "size": {
+        "width": "37",
+        "height": "53",
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2022,
+      "name": "Alumini"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Roure reboll en confinament.jpg",
+      "size": {
+        "width": "65",
+        "height": "50",
+        "depth": null
+      },
+      "technique": "Oli sobre tela",
+      "year": 2020,
+      "name": "Roure reboll en confinament"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Semprevives en confinament.jpg",
+      "size": {
+        "width": "65",
+        "height": "50",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2020,
+      "name": "Semprevives en confinament"
+    },
+    {
+      "image": "/assets/obra/Natures Mortes/Pomerola en confinament.jpg",
+      "size": {
+        "width": "65",
+        "height": "50",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2020,
+      "name": "Pomerola en confinament"
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+      "image": "/assets/obra/Picorandan/El Picorandan.jpg",
+      "size": {
+        "width": "34",
+        "height": "18",
+        "depth": null
+      },
+      "technique": "Oli sobre fusta",
+      "year": 2024,
+      "name": "El Picorandan"
+    },
+    {
+      "image": "/assets/obra/Picorandan/Picorandan I.jpg",
+      "size": {
+        "width": "130",
+        "height": "195",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2005,
+      "name": "Picorandan I"
+    },
+    {
+      "image": "/assets/obra/Picorandan/Picorandan II.jpg",
+      "size": {
+        "width": "97",
+        "height": "130",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2006,
+      "name": "Picorandan II"
+    },
+    {
+      "image": "/assets/obra/Picorandan/Picorandan III.jpg",
+      "size": {
+        "width": "195",
+        "height": "130",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2005,
+      "name": "Picorandan III"
+    },
+    {
+      "image": "/assets/obra/Picorandan/Picorandan IV.jpg",
+      "size": {
+        "width": "35",
+        "height": "27",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2006,
+      "name": "Picorandan IV"
+    },
+    {
+      "image": "/assets/obra/Picorandan/Picorandan V.jpg",
+      "size": {
+        "width": "97",
+        "height": "130",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2007,
+      "name": "Picorandan V"
+    },
+    {
+      "image": "/assets/obra/Picorandan/Picorandan VI.jpg",
+      "size": {
+        "width": "97",
+        "height": "130",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2007,
+      "name": "Picorandan VI"
+    },
+    {
+      "image": "/assets/obra/Picorandan/Picorandan VII.jpg",
+      "size": {
+        "width": "97",
+        "height": "130",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2007,
+      "name": "Picorandan VII"
+    },
+    {
+      "image": "/assets/obra/Picorandan/Picorandan VIII.jpg",
+      "size": {
+        "width": "97",
+        "height": "130",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2006,
+      "name": "Picorandan VIII"
+    },
+    {
+      "image": "/assets/obra/Picorandan/Picorandan IX.jpg",
+      "size": {
+        "width": "24",
+        "height": "33",
+        "depth": null
+      },
+      "technique": "Oli sobre llenç",
+      "year": 2018,
+      "name": "Picorandan IX"
+    }
+]
