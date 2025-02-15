@@ -1,0 +1,90 @@
+[
+    {
+      "image": "/assets/obra/Dones avançant/Sense descans.jpg",
+      "size": {
+        "width": 80,
+        "height": 160,
+        "depth": null
+      },
+      "technique": "Mixta sobre fusta",
+      "year": 2020,
+      "name": "Sense descans"
+    },
+    {
+      "image": "/assets/obra/Dones avançant/A l'ombra.jpg",
+      "size": {
+        "width": 80,
+        "height": 160,
+        "depth": null
+      },
+      "technique": "Mixta sobre fusta",
+      "year": 2019,
+      "name": "A l'ombra"
+    },
+    {
+      "image": "/assets/obra/Dones avançant/Des del principi.jpg",
+      "size": {
+        "width": 80,
+        "height": 160,
+        "depth": null
+      },
+      "technique": "Mixta sobre fusta",
+      "year": 2019,
+      "name": "Des del principi"
+    },
+    {
+      "image": "/assets/obra/Dones avançant/Per als altres.jpg",
+      "size": {
+        "width": 80,
+        "height": 160,
+        "depth": null
+      },
+      "technique": "Mixta sobre fusta",
+      "year": 2019,
+      "name": "Per als altres"
+    },
+    {
+      "image": "/assets/obra/Dones avançant/Por el arte.jpg",
+      "size": {
+        "width": 80,
+        "height": 160,
+        "depth": null
+      },
+      "technique": "Mixta sobre fusta",
+      "year": 2019,
+      "name": "Por el arte"
+    },
+    {
+      "image": "/assets/obra/Dones avançant/De cor.jpg",
+      "size": {
+        "width": 80,
+        "height": 160,
+        "depth": null
+      },
+      "technique": "Mixta sobre fusta",
+      "year": 2020,
+      "name": "De cor"
+    },
+    {
+      "image": "/assets/obra/Dones avançant/Des de lluny.jpg",
+      "size": {
+        "width": 80,
+        "height": 160,
+        "depth": null
+      },
+      "technique": "Mixta sobre fusta",
+      "year": 2019,
+      "name": "Des de lluny"
+    },
+    {
+      "image": "/assets/obra/Dones avançant/Amb tot.jpg",
+      "size": {
+        "width": 80,
+        "height": 160,
+        "depth": null
+      },
+      "technique": "Mixta sobre fusta",
+      "year": 2019,
+      "name": "Amb tot"
+    }
+]

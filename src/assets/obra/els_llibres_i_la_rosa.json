@@ -1,0 +1,35 @@
+[
+    {
+      "image": "/assets/obra/Els llibres i la rosa/Els llibres i la rosa I.jpg",
+      "size": {
+        "width": 13,
+        "height": 15,
+        "depth": null
+      },
+      "technique": "Mixta sobre cartró",
+      "year": 2021,
+      "name": "Els llibres i la rosa I"
+    },
+    {
+      "image": "/assets/obra/Els llibres i la rosa/Els llibres i la rosa II.jpg",
+      "size": {
+        "width": 13,
+        "height": 15,
+        "depth": null
+      },
+      "technique": "Mixta sobre cartró",
+      "year": 2021,
+      "name": "Els llibres i la rosa II"
+    },
+    {
+      "image": "/assets/obra/Els llibres i la rosa/Els llibres i la rosa III.jpg",
+      "size": {
+        "width": 70,
+        "height": 87,
+        "depth": null
+      },
+      "technique": "Mixta sobre cartró",
+      "year": 2021,
+      "name": "Els llibres i la rosa III"
+    }
+]

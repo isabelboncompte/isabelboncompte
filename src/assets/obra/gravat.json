@@ -1,0 +1,90 @@
+[
+    {
+      "image": "/assets/obra/Gravat/Estampa I.jpg",
+      "size": {
+        "width": 50,
+        "height": 70,
+        "depth": null
+      },
+      "technique": "Punta seca",
+      "year": 2016,
+      "name": "Estampa I"
+    },
+    {
+      "image": "/assets/obra/Gravat/Estampa II.jpg",
+      "size": {
+        "width": 50,
+        "height": 70,
+        "depth": null
+      },
+      "technique": "Punta seca",
+      "year": 2016,
+      "name": "Estampa II"
+    },
+    {
+      "image": "/assets/obra/Gravat/Estampa III.jpg",
+      "size": {
+        "width": 50,
+        "height": 70,
+        "depth": null
+      },
+      "technique": "Punta seca",
+      "year": 2016,
+      "name": "Estampa II"
+    },
+    {
+      "image": "/assets/obra/Gravat/Estampa IV.jpg",
+      "size": {
+        "width": 50,
+        "height": 70,
+        "depth": null
+      },
+      "technique": "Punta seca",
+      "year": 2016,
+      "name": "Estampa IV"
+    },
+    {
+      "image": "/assets/obra/Gravat/Estampa V.jpg",
+      "size": {
+        "width": 50,
+        "height": 70,
+        "depth": null
+      },
+      "technique": "Punta seca",
+      "year": 2016,
+      "name": "Estampa V"
+    },
+    {
+      "image": "/assets/obra/Gravat/Estampa VI.jpg",
+      "size": {
+        "width": 50,
+        "height": 70,
+        "depth": null
+      },
+      "technique": "Punta seca",
+      "year": 2016,
+      "name": "Estampa VI"
+    },
+    {
+      "image": "/assets/obra/Gravat/Estampa VII.jpg",
+      "size": {
+        "width": 50,
+        "height": 70,
+        "depth": null
+      },
+      "technique": "Punta seca",
+      "year": 2016,
+      "name": "Estampa VII"
+    },
+    {
+      "image": "/assets/obra/Gravat/Estampa VIII.jpg",
+      "size": {
+        "width": 50,
+        "height": 70,
+        "depth": null
+      },
+      "technique": "Punta seca",
+      "year": 2016,
+      "name": "Estampa VIII"
+    }
+]

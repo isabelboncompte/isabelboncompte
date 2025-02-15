@@ -1,0 +1,255 @@
+[
+    {
+      "image": "/assets/obra/Dibuix/Pont vell.jpg",
+      "size": {
+        "width": 30,
+        "height": 23,
+        "depth": null
+      },
+      "technique": "Llapis de color",
+      "year": 2024,
+      "name": "Pont Vell"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Prunera I.jpg",
+        "size": {
+          "width": 21,
+          "height": 28,
+          "depth": null
+        },
+        "technique": "Tinta",
+        "year": 2024,
+        "name": "Prunera I"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Prunera II.jpg",
+        "size": {
+          "width": 21,
+          "height": 28,
+          "depth": null
+        },
+        "technique": "Tinta",
+        "year": 2024,
+        "name": "Prunera II"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Prunera III.jpg",
+        "size": {
+          "width": 15,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Tinta",
+        "year": 2024,
+        "name": "Prunera III"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Kèntia.jpg",
+        "size": {
+          "width": 21,
+          "height": 28,
+          "depth": null
+        },
+        "technique": "Tinta",
+        "year": 2024,
+        "name": "Kèntia"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Crisantems I.jpg",
+        "size": {
+          "width": 25,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Tinta",
+        "year": 2024,
+        "name": "Crisantems I"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Crisantems II.jpg",
+        "size": {
+          "width": 25,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Tinta",
+        "year": 2024,
+        "name": "Crisantems II"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Bambú.jpg",
+        "size": {
+          "width": 42,
+          "height": 15,
+          "depth": null
+        },
+        "technique": "Tinta",
+        "year": 2024,
+        "name": "Bambú"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Les barbes de frare.jpg",
+        "size": {
+          "width": 30,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Pastel sobre paper",
+        "year": 2023,
+        "name": "Les barbes de frare"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Pels camins.jpg",
+        "size": {
+          "width": 21,
+          "height": 29,
+          "depth": null
+        },
+        "technique": "Tinta sobre paper",
+        "year": 2020,
+        "name": "Pels camins"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Camí I.jpg",
+        "size": {
+          "width": 30,
+          "height": 21,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2016,
+        "name": "Camí I"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Camí II.jpg",
+        "size": {
+          "width": 30,
+          "height": 21,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2016,
+        "name": "Camí II"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Camí III.jpg",
+        "size": {
+          "width": 30,
+          "height": 21,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2016,
+        "name": "Camí III"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Variacions.jpg",
+        "size": {
+          "width": 30,
+          "height": 21,
+          "depth": null
+        },
+        "technique": "Tinta",
+        "year": 2015,
+        "name": "Variacions"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Bec de la gallina.jpg",
+        "size": {
+          "width": 30,
+          "height": 21,
+          "depth": null
+        },
+        "technique": "Tinta",
+        "year": 2015,
+        "name": "Bec de la gallina"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Llums I.jpg",
+        "size": {
+          "width": 30,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2017,
+        "name": "Llums I"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Llums II.jpg",
+        "size": {
+          "width": 30,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2017,
+        "name": "Llums II"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Llums III.jpg",
+        "size": {
+          "width": 30,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2017,
+        "name": "Llums III"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Llums IV.jpg",
+        "size": {
+          "width": 30,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2017,
+        "name": "Llums IV"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Llums V.jpg",
+        "size": {
+          "width": 30,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2017,
+        "name": "Llums V"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Llums VI.jpg",
+        "size": {
+          "width": 30,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2017,
+        "name": "Llums VI"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Llums VII.jpg",
+        "size": {
+          "width": 30,
+          "height": 42,
+          "depth": null
+        },
+        "technique": "Llapis",
+        "year": 2017,
+        "name": "Llums VII"
+    },
+    {
+        "image": "/assets/obra/Dibuix/Lola.jpg",
+        "size": {
+          "width": 42,
+          "height": 29,
+          "depth": null
+        },
+        "technique": "Tinta i llapis sobre paper",
+        "year": 2015,
+        "name": "Llums II"
+    }
+]

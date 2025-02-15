@@ -1,0 +1,58 @@
+[
+    {
+      "image": "/assets/obra/Espriu/El caminant i el mur (II Petit eco en el Styx).jpg",
+      "size": {
+        "width": 35,
+        "height": 38,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2021,
+      "name": "El caminant i el mur (II Petit eco en el Styx)"
+    },
+    {
+      "image": "/assets/obra/Espriu/El caminant i el mur (IX Si a la cendra).jpg",
+      "size": {
+        "width": 19,
+        "height": 35,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2021,
+      "name": "El caminant i el mur (IX Si a la cendra)"
+    },
+    {
+      "image": "/assets/obra/Espriu/Llibre de Sinera (Poema XIX) I.jpg",
+      "size": {
+        "width": 24,
+        "height": 34,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2021,
+      "name": "Llibre de Sinera (Poema XIX) I"
+    },
+    {
+      "image": "/assets/obra/Espriu/Llibre de Sinera (Poema XIX) II.jpg",
+      "size": {
+        "width": 22,
+        "height": 35,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2021,
+      "name": "Llibre de Sinera (Poema XIX) II"
+    },
+    {
+      "image": "/assets/obra/Espriu/El caminant i el mur (XII Prec de Nadal).jpg",
+      "size": {
+        "width": 19,
+        "height": 35,
+        "depth": null
+      },
+      "technique": "Oli sobre cartró",
+      "year": 2021,
+      "name": "El caminant i el mur (XII Prec de Nadal)"
+    }
+
+]
