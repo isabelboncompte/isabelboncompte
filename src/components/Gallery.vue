@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title">{{ title }}</h1>
+  <h1 class="title">{{ name.charAt(0).toUpperCase() + name.slice(1) }}</h1>
 
   <div class="gallery">
     {{ imgUrls }}
@@ -73,5 +73,12 @@ export default {
 
 .gallery-item:hover .image-name {
   opacity: 1;
+}
+
+
+a:hover {
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
 }
   </style>
