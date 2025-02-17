@@ -20,12 +20,13 @@
             const { name } = this.$route.query;
             this.index = index;
             this.name = name;
-            const response = await import(/* @vite-ignore */ '../assets/obra/' + this.$route.query.name + '.json');
-            const images = response.default;
+            const json = await fetch('https://raw.githubusercontent.com/isabelboncompte/isabelboncompte/main/src/assets/obra/'+ this.$route.query.name +'.json');
+            const response = await json.json();
+            console.log(response)
             // Use the botanica data here
-            console.log(images[index])
+            console.log(response[index])
 
-            this.currentImage = `${this.github}${images[index].image}`;
+            this.currentImage = `${this.github}${response[index].image}`;
         } catch (error) {
             console.error('Error loading JSON:', error);
         }

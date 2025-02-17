@@ -10,6 +10,7 @@ export default {
   data() {
     return {
       name: 'botanica',
+      title: 'Botànica'
     };
   },
 };
@@ -17,7 +18,7 @@ export default {
 
 <template>
   <div>
-    <Gallery :images="botanica" :name="name"/>
+    <Gallery :images="botanica" :name="name" :title="title"/>
   </div>
 </template>
 

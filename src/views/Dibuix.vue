@@ -8,6 +8,7 @@ export default {
   data() {
     return {
       name: 'dibuix',
+      title: 'Dibuix'
     };
   },
 };
@@ -15,7 +16,7 @@ export default {
 
 <template>
   <div>
-    <Gallery :images="dibuix" :name="name" />
+    <Gallery :images="dibuix" :name="name" :title="title"/>
   </div>
 </template>
 

@@ -8,6 +8,7 @@ export default {
   data() {
     return {
       name: 'murs_i_camins',
+      title: 'Murs i Camins'
     };
   },
 };
@@ -15,7 +16,7 @@ export default {
 
 <template>
   <div>
-    <Gallery :images="murs_i_camins" :name="name" />
+    <Gallery :images="murs_i_camins" :name="name" :title="title"/>
   </div>
 </template>
 

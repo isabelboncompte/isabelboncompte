@@ -8,6 +8,7 @@ export default {
   data() {
     return {
       name: 'miscellania',
+      title: 'Miscel·lania'
     };
   },
 };
@@ -15,7 +16,7 @@ export default {
 
 <template>
   <div>
-    <Gallery :images="miscellania" :name="name" />
+    <Gallery :images="miscellania" :name="name" :title="title"/>
   </div>
 </template>
 

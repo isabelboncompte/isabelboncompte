@@ -8,6 +8,7 @@ export default {
   data() {
     return {
       name: 'els_llibres_i_la_rosa',
+      title: 'Els llibres i la rosa'
     };
   },
 };
@@ -16,7 +17,7 @@ export default {
 
 <template>
   <div>
-    <Gallery :images="els_llibres_i_la_rosa" :name="name" />
+    <Gallery :images="els_llibres_i_la_rosa" :name="name" :title="title"/>
   </div>
 </template>
 

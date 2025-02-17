@@ -8,6 +8,7 @@ export default {
   data() {
     return {
       name: 'homenatge_a_chantal_maillard',
+      title: 'Homenatge a Chantal Maillard'
     };
   },
 };
@@ -15,7 +16,7 @@ export default {
 
 <template>
   <div>
-    <Gallery :images="homenatge_a_chantal_maillard" :name="name" />
+    <Gallery :images="homenatge_a_chantal_maillard" :name="name" :title="title"/>
   </div>
 </template>
 
