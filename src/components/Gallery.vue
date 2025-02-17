@@ -3,6 +3,8 @@
         {{ imgUrls }}
       <div v-for="(image, index) in images" :key="index" class="gallery-item">
         <img :src="`${github}${image.image}`" :alt="image.name" />
+        <span class="image-name">{{ image.name }}</span>
+
       </div>
     </div>
   </template>
@@ -33,10 +35,33 @@
 .gallery-item {
   display: inline-block;
   width: 100%;
+  position: relative;
+}
+
+.image-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3d3d3d;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.gallery-item:hover img {
+  opacity: 0.2;
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.gallery-item:hover .image-name {
+  opacity: 1;
 }
   </style>

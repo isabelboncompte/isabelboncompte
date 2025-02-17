@@ -1,113 +1,62 @@
 <template>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <RouterLink to="/">Home</RouterLink>
-          </li>
-          <li>
-            <span>Obra</span>
-            <ul>
-              <li>
-                <RouterLink to="/obra/retrats">Retrats</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/postals">Postals</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/picorandan">Picorandan</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/naturesmortes">Natures Mortes</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/mursicamins">Murs i camins</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/miscellania">Miscel·lània</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/homenatgeachantalmaillard">Homenatge a Chantal Maillard</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/gravat">Gravat</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/espriu">Espriu</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/elsllibresilarosa">Els llibres i la rosa</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/donesavançant">Dones Avançant</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/dibuix">Dibuix</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/botanica">Botànica</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/apuntsfigura">Apunts Figura</RouterLink>
-              </li>
-              <li>
-                <RouterLink to="/obra/apuntspaisatge">Apunts Paisatge</RouterLink>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      <b-navbar>
+        <template #brand>
+          <b-navbar-item tag="router-link" :to="{ path: '/' }">
+                Isabel Boncompte
+            </b-navbar-item>
+        </template>
+  
+        <template #end>
+          <b-navbar-item tag="router-link" :to="{ path: '/' }">
+            Home
+          </b-navbar-item>
+          <b-navbar-item tag="div">
+            <b-navbar-dropdown label="Obra" right=false>
+              <b-navbar-item
+                v-for="(item, index) in menu"
+                :key="index"
+                :value="item.to"
+                @click="$router.push(item.to)"
+              >
+              {{ item.label }}
+              </b-navbar-item>
+            </b-navbar-dropdown>
+          </b-navbar-item>
+        </template>
+      </b-navbar>
     </header>
   </template>
   
   <script>
-  import { RouterLink } from 'vue-router'
-  
-  export default {
-    components: { RouterLink }
-  }
+import { RouterLink } from 'vue-router'
+
+export default {
+  components: { RouterLink },
+  data() {
+    return {
+      menu: [
+        { label: 'Retrats', to: '/obra/retrats' },
+        { label: 'Postals', to: '/obra/postals' },
+        { label: 'Picorandan', to: '/obra/picorandan' },
+        { label: 'Natures Mortes', to: '/obra/naturesmortes' },
+        { label: 'Murs i camins', to: '/obra/mursicamins' },
+        { label: 'Miscel·lània', to: '/obra/miscellania' },
+        { label: 'Homenatge a Chantal Maillard', to: '/obra/homenatgeachantalmaillard' },
+        { label: 'Gravat', to: '/obra/gravat' },
+        { label: 'Espriu', to: '/obra/espriu' },
+        { label: 'Els llibres i la rosa', to: '/obra/elsllibresilarosa' },
+        { label: 'Dones Avançant', to: '/obra/donesavançant' },
+        { label: 'Dibuix', to: '/obra/dibuix' },
+        { label: 'Botànica', to: '/obra/botanica' },
+        { label: 'Apunts Figura', to: '/obra/apuntsfigura' },
+        { label: 'Apunts Paisatge', to: '/obra/apuntspaisatge' },
+      ],
+    }
+  },
+}
   </script>
   
   <style scoped>
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  nav li {
-    margin-right: 20px;
-    position: relative;
-  }
-  
-  nav li ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    padding: 10px;
-    display: none;
-  }
-  
-  nav li:hover ul {
-    display: block;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: #ccc;
-  }
   </style>

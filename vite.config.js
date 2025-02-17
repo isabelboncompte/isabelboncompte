@@ -14,7 +14,7 @@ export default defineConfig({
   assetsInclude: ['**/*.jpg', '**/*.png'],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
 })
