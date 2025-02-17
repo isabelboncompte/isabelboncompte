@@ -2,6 +2,8 @@
 import Gallery from '../components/Gallery.vue'
 </script>
 
+
+
 <template>
   <div>
   </div>

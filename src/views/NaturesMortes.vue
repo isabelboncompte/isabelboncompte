@@ -3,9 +3,19 @@ import natures_mortes from '../assets/obra/natures_mortes.json'
 import Gallery from '../components/Gallery.vue'
 </script>
 
+<script>
+export default {
+  data() {
+    return {
+      name: 'natures_mortes',
+    };
+  },
+};
+</script>
+
 <template>
   <div>
-    <Gallery :images="natures_mortes" />
+    <Gallery :images="natures_mortes" :name="name" />
   </div>
 </template>
 

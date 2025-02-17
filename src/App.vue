@@ -24,9 +24,9 @@ export default {
 }
 
 .header {
-  width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
 }
 
 .body {

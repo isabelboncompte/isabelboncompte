@@ -10,13 +10,14 @@ import MursICamins from './views/MursICamins.vue'
 import HomenatgeAChantalMaillard from './views/HomenatgeAChantalMaillard.vue'
 import Gravat from './views/Gravat.vue'
 import Espriu from './views/Espriu.vue'
-import ElsLlibresIlaRosa from './views/ElsLlibresIlaRosa.vue'
+import ElsLlibresIlaRosa from './views/ElsLlibresILaRosa.vue'
 import DonesAvançant from './views/DonesAvançant.vue'
 import Dibuix from './views/Dibuix.vue'
 import Ceramica from './views/Ceramica.vue'
 import Botanica from './views/Botanica.vue'
 import ApuntsPaisatge from './views/ApuntsPaisatge.vue'
 import ApuntsFigura from './views/ApuntsFigura.vue'
+import ImageViewer from './components/ImageViewer.vue'
 
 const routes = [
   {
@@ -103,7 +104,13 @@ const routes = [
     path: '/obra/apuntspaisatge',
     name: 'Apunts paisatge',
     component: ApuntsPaisatge
-  }
+  },
+  {
+    path: '/image/:index',
+    name: 'image-viewer',
+    component: ImageViewer,
+    props: true,
+  },
 ]
 
 const router = createRouter({

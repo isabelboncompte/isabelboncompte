@@ -1,28 +1,35 @@
 <template>
-    <div class="gallery">
-        {{ imgUrls }}
-      <div v-for="(image, index) in images" :key="index" class="gallery-item">
+  <h1 class="title">{{ name.charAt(0).toUpperCase() + name.slice(1) }}</h1>
+
+  <div class="gallery">
+    {{ imgUrls }}
+    <div v-for="(image, index) in images" :key="index" class="gallery-item">
+      <router-link :to="{ name: 'image-viewer', params: { index }, query: { name } }">
         <img :src="`${github}${image.image}`" :alt="image.name" />
         <span class="image-name">{{ image.name }}</span>
-
-      </div>
+      </router-link>
     </div>
-  </template>
+  </div>
+</template>
 
 <script>
-  export default {
-    props: {
-      images: {
-        type: Array,
-        required: true,
-      },
+export default {
+  props: {
+    images: {
+      type: Array,
+      required: true,
     },
-    data() {
-    return {
-      github: 'https://raw.githubusercontent.com/isabelboncompte/isabelboncompte/refs/heads/main/src'
+    name: {
+      type: String,
+      required: false
     }
-  }
-  };
+  },
+  data() {
+    return {
+      github: 'https://raw.githubusercontent.com/isabelboncompte/isabelboncompte/refs/heads/main/src',
+    };
+  },
+};
 </script>
   
   <style scoped>
