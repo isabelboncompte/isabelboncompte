@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title">{{ name.charAt(0).toUpperCase() + name.slice(1) }}</h1>
+  <h1 class="title">{{ title }}</h1>
 
   <div class="gallery">
     {{ imgUrls }}
