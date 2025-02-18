@@ -1,5 +1,10 @@
 <template>
-    <div class="image-viewer">
+    <b-skeleton v-if="!imageLoaded" width="100%" height="80vh"></b-skeleton>
+
+    <div v-if="imageLoaded" class="image-viewer">
+        <button class="back-button" @click="$router.go(-1)">
+        <font-awesome-icon icon="fa-solid fa-arrow-left" />
+        </button>
       <img :src="currentImage" style="padding-top: 16px; padding-bottom: 16px;" />
       <h6 class="title is-4" v-if="response && response.name">{{ response.name }}</h6>
       <p class="description" v-if="response && response.year">Any: {{ response.year }}</p>
@@ -18,7 +23,8 @@
         index: null,
         currentImage: null,
         description: null,
-        response: null
+        response: null,
+        imageLoaded: false,
       };
     },
     async mounted() {
@@ -37,6 +43,7 @@
         this.response = response[index];
 
         this.description = response[index].description; // Assuming 'description' is a key in your JSON
+        this.imageLoaded = true;
       } catch (error) {
         console.error('Error loading JSON:', error);
       }
@@ -45,17 +52,29 @@
   </script>
   
   <style scoped>
-  .image-viewer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden; /* Prevent scrolling */
-  }
-  
+.back-button {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left: -16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.image-viewer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden; /* Prevent scrolling */
+  margin-top: 20px;
+}
+
   .image-viewer img {
     object-fit: contain;
     width: 82%; /* Reduced width to fit description */
