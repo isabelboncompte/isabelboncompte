@@ -7,8 +7,8 @@ import Gallery from '../components/Gallery.vue'
 export default {
   data() {
     return {
-      name: 'retrats',
-      title: 'Retrats'
+      name: 'retratsifigura',
+      title: 'Retrats i Figura'
     };
   },
 };

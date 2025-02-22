@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       name: 'apunts_figura',
-      title: 'Apunts figura'
+      title: 'Apunts de retrat i figura'
     };
   },
 };

@@ -88,6 +88,28 @@
       "name": "Sant Quirze de Pedret"
     },
     {
+      "image": "/assets/obra/Miscel·lània/Els llibres i la rosa I.jpg",
+      "size": {
+        "width": 13,
+        "height": 15,
+        "depth": null
+      },
+      "technique": "Mixta sobre cartró",
+      "year": 2021,
+      "name": "Els llibres i la rosa I"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Els llibres i la rosa II.jpg",
+      "size": {
+        "width": 13,
+        "height": 15,
+        "depth": null
+      },
+      "technique": "Mixta sobre cartró",
+      "year": 2021,
+      "name": "Els llibres i la rosa II"
+    },
+    {
       "image": "/assets/obra/Miscel·lània/Joc de construcció.jpg",
       "size": {
         "width": "43",
@@ -108,6 +130,39 @@
       "technique": "Collage",
       "year": 2020,
       "name": "Maud"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Mans I.jpg",
+      "size": {
+        "width": "25",
+        "height": "25",
+        "depth": null
+      },
+      "technique": null,
+      "year": 2016,
+      "name": "Mans I"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Mans II.jpg",
+      "size": {
+        "width": "25",
+        "height": "25",
+        "depth": null
+      },
+      "technique": null,
+      "year": 2016,
+      "name": "Mans II"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Mans III.jpg",
+      "size": {
+        "width": "25",
+        "height": "25",
+        "depth": null
+      },
+      "technique": null,
+      "year": 2016,
+      "name": "Mans III"
     },
     {
       "image": "/assets/obra/Miscel·lània/Joc de taula del nombre d'or I.jpg",

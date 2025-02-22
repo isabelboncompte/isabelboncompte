@@ -1,7 +1,7 @@
 // src/router.js
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './views/Home.vue'
-import Retrats from './views/Retrats.vue'
+import RetratsIFigura from './views/RetratsIFigura.vue'
 import Postals from './views/Postals.vue'
 import Picorandan from './views/Picorandan.vue'
 import NaturesMortes from './views/NaturesMortes.vue'
@@ -27,9 +27,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/obra/retrats',
-    name: 'Retrats',
-    component: Retrats
+    path: '/obra/retratsifigura',
+    name: 'Retrats i Figura',
+    component: RetratsIFigura
   },
   {
     path: '/obra/postals',

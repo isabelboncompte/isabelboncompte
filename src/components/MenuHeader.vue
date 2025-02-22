@@ -46,7 +46,6 @@ export default {
         { label: 'Murs i camins', to: '/obra/mursicamins' },
         { label: 'Miscel·lània', to: '/obra/miscellania' },
         { label: 'Homenatge a Chantal Maillard', to: '/obra/homenatgeachantalmaillard' },
-        { label: 'Gravat', to: '/obra/gravat' },
         { label: 'Espriu', to: '/obra/espriu' },
         { label: 'Els llibres i la rosa', to: '/obra/elsllibresilarosa' },
         { label: 'Dones Avançant', to: '/obra/donesavançant' },
@@ -54,6 +53,8 @@ export default {
         { label: 'Botànica', to: '/obra/botanica' },
         { label: 'Apunts Figura', to: '/obra/apuntsfigura' },
         { label: 'Apunts Paisatge', to: '/obra/apuntspaisatge' },
+        // { label: 'Gravat', to: '/obra/gravat' },
+
       ],
     }
   },

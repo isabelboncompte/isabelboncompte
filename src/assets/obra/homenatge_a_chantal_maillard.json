@@ -20,38 +20,5 @@
       "technique": null,
       "year": 2016,
       "name": "La baba del cargol phi"
-    },
-    {
-      "image": "/assets/obra/Homenatge a Chantal Maillard/Mans I.jpg",
-      "size": {
-        "width": "25",
-        "height": "25",
-        "depth": null
-      },
-      "technique": null,
-      "year": 2016,
-      "name": "Mans I"
-    },
-    {
-      "image": "/assets/obra/Homenatge a Chantal Maillard/Mans II.jpg",
-      "size": {
-        "width": "25",
-        "height": "25",
-        "depth": null
-      },
-      "technique": null,
-      "year": 2016,
-      "name": "Mans II"
-    },
-    {
-      "image": "/assets/obra/Homenatge a Chantal Maillard/Mans III.jpg",
-      "size": {
-        "width": "25",
-        "height": "25",
-        "depth": null
-      },
-      "technique": null,
-      "year": 2016,
-      "name": "Mans III"
     }
 ]
