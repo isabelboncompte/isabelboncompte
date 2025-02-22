@@ -154,17 +154,6 @@
       "name": "Mans II"
     },
     {
-      "image": "/assets/obra/Miscel·lània/Innocenti.jpg",
-      "size": {
-        "width": "105",
-        "height": "75",
-        "depth": null
-      },
-      "technique": "Acrílic sobre cartró",
-      "year": 2006,
-      "name": "Innocenti"
-    },
-    {
       "image": "/assets/obra/Miscel·lània/Mans III.jpg",
       "size": {
         "width": "25",
@@ -229,6 +218,17 @@
       "technique": "Acrílic",
       "year": 1994,
       "name": "Il Redentore"
+    },
+    {
+      "image": "/assets/obra/Miscel·lània/Innocenti.jpg",
+      "size": {
+        "width": "105",
+        "height": "75",
+        "depth": null
+      },
+      "technique": "Acrílic sobre cartró",
+      "year": 1993,
+      "name": "Innocenti"
     },
     {
       "image": "/assets/obra/Miscel·lània/Brunelleschi.jpg",
