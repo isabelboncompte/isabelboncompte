@@ -14,6 +14,8 @@ export default {
   <div class="body">
     <RouterView />
   </div>
+  <div class="peu">
+  </div>
 </template>
 
 <style>
@@ -32,8 +34,13 @@ export default {
 .body {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
   /* Other styles */
+}
+
+.peu {
+  max-width: 1280px;
+  font-weight: normal;
+  height: 40px;
 }
 </style>

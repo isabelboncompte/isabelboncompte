@@ -1,29 +1,29 @@
 <template>
   <div>
     <b-skeleton v-if="!imagesLoaded" width="100%" height="80vh"></b-skeleton>
-    <div v-if="imagesLoaded">
+    <div v-if="imagesLoaded" class="ml-3 mr-3">
       <div class="row">
         <h1 class="title">{{ title }}</h1>
-        <font-awesome-icon icon="fa-solid  fa-th-large" @click="toggleStyle">
+        <font-awesome-icon  v-if="!isPhoneScreen" :icon="iconName" @click="toggleStyle">
         </font-awesome-icon>
       </div>
     </div>
 
 
-    <div v-if="imagesLoaded" :class="['gallery', style]">
-
+    <div v-if="imagesLoaded" :class="['gallery', style]" class="m-2">
       <div v-for="(image, index) in images" :key="index" class="gallery-item">
         <router-link :to="{ name: 'image-viewer', params: { index }, query: { name } }">
-          <img :src="`${github}${image.image}`" :alt="image.name" />
+          <img :src="`${github}${image.image}`" :alt="image.name" :class="{ 'max-height': style === 'vertical' }"  />
           <span v-if="style === 'grid'" class="image-name">{{ image.name }}</span>
-          <div v-if="style === 'vertical'">
-            <h6 class="title is-4 image-title" v-if="image && image.name">{{ image.name }}</h6>
-            <p class="image-description">Any: {{ image.year }}</p>
-            <p class="image-description">Tècnica: {{ image.technique }}</p>
-            <p class="image-description">Mida: {{ image.size.width }} x {{ image.size.width }}</p>
-          </div>
         </router-link>
+        <div v-if="style === 'vertical'" class="vertical-text">
+          <h6 class="title is-4 image-title" v-if="image && image.name">{{ image.name }}</h6>
+          <p class="image-description">Any: {{ image.year }}</p>
+          <p class="image-description">Tècnica: {{ image.technique }}</p>
+          <p class="image-description">Mida: {{ image.size.width }} x {{ image.size.width }}</p>
+        </div>
       </div>
+
   </div>
   </div>
 </template>
@@ -48,6 +48,8 @@ export default {
       github: 'https://raw.githubusercontent.com/isabelboncompte/isabelboncompte/refs/heads/main/src',
       imagesLoaded: false,
       style: localStorage.getItem('galleryStyle') || 'grid', 
+      iconName: 'fa-solid fa-th-large',
+      isPhoneScreen: window.innerWidth < 768
     };
   },
   mounted() {
@@ -63,13 +65,24 @@ export default {
     })).then(() => {
       this.imagesLoaded = true;
     });
+    window.addEventListener('resize', this.updateIsPhoneScreen);
   },
   methods: {
     toggleStyle() {
       this.style = this.style === 'grid' ? 'vertical' : 'grid';
+      this.iconName = this.iconName === 'fa-solid fa-th-large' ? 'fa-solid fa-th-list' : 'fa-solid fa-th-large';
       localStorage.setItem('galleryStyle', this.style); 
     },
+    updateIsPhoneScreen() {
+      this.isPhoneScreen = window.innerWidth < 768;
+      if (this.isPhoneScreen){
+        this.style = 'vertical'
+      }
+    },
   },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.updateIsPhoneScreen);
+  }
 };
 </script>
 
@@ -108,8 +121,13 @@ export default {
 
 .gallery.vertical .gallery-item img {
   width: 100%;
-  height: 80vh; /* Set the height to the viewport height */
+  height: auto; /* Set height to auto */
   object-fit: contain; /* Make the image fit within the container */
+}
+
+.vertical-text {
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
 
 .gallery-item {
@@ -131,7 +149,10 @@ export default {
   pointer-events: none;
 }
 
-
+.max-height {
+  max-height: 80vh;
+  object-fit: contain;
+}
 
 .gallery-item img {
   width: 100%;

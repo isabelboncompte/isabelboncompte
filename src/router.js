@@ -18,6 +18,7 @@ import Botanica from './views/Botanica.vue'
 import ApuntsPaisatge from './views/ApuntsPaisatge.vue'
 import ApuntsFigura from './views/ApuntsFigura.vue'
 import ImageViewer from './components/ImageViewer.vue'
+import Bibliografia from './views/Bibliografia.vue'
 
 const routes = [
   {
@@ -110,6 +111,11 @@ const routes = [
     name: 'image-viewer',
     component: ImageViewer,
     props: true,
+  },
+  {
+    path: '/bibliografia',
+    name: 'bibliografia',
+    component: Bibliografia,
   },
 ]
 
