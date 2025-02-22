@@ -66,6 +66,7 @@ export default {
       this.imagesLoaded = true;
     });
     window.addEventListener('resize', this.updateIsPhoneScreen);
+    this.updateIsPhoneScreen();
   },
   methods: {
     toggleStyle() {

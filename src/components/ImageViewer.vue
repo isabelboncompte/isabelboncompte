@@ -74,7 +74,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
   overflow: hidden; /* Prevent scrolling */
   margin-top: 20px;
 }
@@ -82,7 +82,7 @@
   .image-viewer img {
     object-fit: contain;
     width: 82%; /* Reduced width to fit description */
-    height: 82%;
+    height: 75%;
     margin-bottom: -4px; /* Add some space between image and description */
   }
   
@@ -92,4 +92,14 @@
     color: #333;
     text-align: center;
   }
+
+@media only screen and (max-width: 768px) {
+  .back-button {
+    position: relative;
+    left: 0;
+    transform: none;
+    margin: 16px auto;
+    display: block;
+  }
+}
   </style>

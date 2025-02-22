@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1 class="title is-1 has-text-centered m-6">ISABEL BONCOMPTE</h1>
+      <h1 class="title is-1 has-text-centered">ISABEL BONCOMPTE</h1>
       <div class="has-text-centered m-6">
         <div>
           <h2 class="title is-2 has-text-centered">BIOGRAFIA</h2>
