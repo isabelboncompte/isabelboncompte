@@ -154,6 +154,17 @@
       "name": "Mans II"
     },
     {
+      "image": "/assets/obra/Miscel·lània/Innocenti.jpg",
+      "size": {
+        "width": "105",
+        "height": "75",
+        "depth": null
+      },
+      "technique": "Collage",
+      "year": 2024,
+      "name": "Tres roses"
+    },
+    {
       "image": "/assets/obra/Miscel·lània/Mans III.jpg",
       "size": {
         "width": "25",

@@ -1,5 +1,16 @@
 [
       {
+        "image": "/assets/obra/Retrats/Manu I.jpg",
+        "size": {
+          "width": 65,
+          "height": 81,
+          "depth": null
+        },
+        "technique": "Oli sobre cartró",
+        "year": 2025,
+        "name": "Manu I"
+      },
+      {
         "image": "/assets/obra/Retrats/Alba III.jpg",
         "size": {
         "width": 65,
