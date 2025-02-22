@@ -1,7 +1,7 @@
 <template>
   <div>
     <img src="../assets/obra/Murs i camins/Paret del brugent al pont vell.jpg" id="full-width-image" />
-    <h1 class="title is-2 has-text-centered mt-6">ISABEL BONCOMPTE</h1>
+    <h1 class="title is-1 has-text-centered mt-6 smaller-text-on-mobile">ISABEL BONCOMPTE</h1>
 
     <div class="row">
       <div class="column text-column">
@@ -28,6 +28,13 @@ export default {
 </script>
 
 <style scoped>
+
+@media only screen and (max-width: 768px) {
+  .smaller-text-on-mobile {
+    font-size: 0.875rem; /* reduced font size on smaller screens */
+  }
+}
+
 .row {
   display: flex;
   align-items: center;

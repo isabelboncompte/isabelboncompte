@@ -3,7 +3,7 @@
       <h1 class="title is-1 has-text-centered">ISABEL BONCOMPTE</h1>
       <div class="has-text-centered m-6">
         <div>
-          <h2 class="title is-2 has-text-centered">BIOGRAFIA</h2>
+          <h2 class="title is-3 has-text-centered">BIOGRAFIA</h2>
           <p>Naixement: Abril 1960 Portbou, Girona</p> 
           <br> 
           <p>Arquitecte per la Universitat Politècnica de Catalunya, Barcelona 1984</p>
@@ -14,7 +14,7 @@
           <br>
 
 
-          <h2 class="title is-2 has-text-centered">FORMACIÓ COMPLEMENTÀRIA</h2>
+          <h2 class="title is-3 has-text-centered">FORMACIÓ COMPLEMENTÀRIA</h2>
 
           <p>Pintura i dibuix: Taller de pintura Serra de Rivera, Taller de pintura de Joan Fercó, Cercle artístic de Sant Lluc: Oscar Sanchís, Francec Artigau, Ingrid Garcia Moya i Diego Mallo Ferrer. Escola Massana: Retrat i figura amb Josep Maria Cabané</p>
           <br>
@@ -22,7 +22,7 @@
           <p>Ceràmica: Escola de Ceràmica de la Bisbal: Torn i engalbes amb Dolors Ros, Taller de ceràmica Josep Papasseit a Miravet, Curs de Motlles a “La industrial” amb Jordi Camprubí, Curs de porcellana per a joieria amb Núria Soley, Curset de torn per a porcellana amb Anàs Rifi</p>
           <br>
 
-          <h2 class="title is-2 has-text-centered">EXPOSICIONS</h2>
+          <h2 class="title is-3 has-text-centered">EXPOSICIONS</h2>
 
             <p>Imatges de Capafonts. Ajuntament de Capafonts, Agost 2024</p>
             <br>
@@ -45,7 +45,7 @@
             <p>Col·lectiva Aula Artística de Portbou a Villeurbanne (Lyon) 1976</p>
             <br>
 
-            <h2 class="title is-2 has-text-centered">PUBLICACIONS</h2>
+            <h2 class="title is-3 has-text-centered">PUBLICACIONS</h2>
 
             <p>Novembre 2017: “Gravat i fotografia, Objectius paral·lels. Martin Lewis i Català-Roca” a la revista Serra d’Or nº 695.</p>
             <br>
@@ -67,7 +67,7 @@
             <p>Juny 1990: Organització i elaboració de les conclusions del “Congrés d’Urbanisme i Territori de Catalunya”. Federació de Municipis de Catalunya. Barcelona.</p>
             <br>
 
-            <h2 class="title is-2 has-text-centered">PREMIS</h2>
+            <h2 class="title is-3 has-text-centered">PREMIS</h2>
 
 
             <p>Desembre 1996: Finalista del concurs d’avantprojectes per al soterrament d’un tram de línia del ferrocarril i nova estació de Renfe de Vic. Ajuntament de Vic.</p>
@@ -120,6 +120,11 @@
     margin: 0;
   }
   
+  .no-break {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
   /* Switch to single-column layout on smaller screens */
   @media (max-width: 768px) {
     .column {

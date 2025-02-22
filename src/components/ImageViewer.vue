@@ -5,7 +5,7 @@
         <button class="back-button" @click="$router.go(-1)">
         <font-awesome-icon icon="fa-solid fa-arrow-left" />
         </button>
-      <img :src="currentImage" style="padding-top: 16px; padding-bottom: 16px;" />
+      <img :src="currentImage" style="padding-top: 16px;" />
       <h6 class="title is-5 title-margin" v-if="response && response.name">{{ response.name }}</h6>
       <p class="description" v-if="response && response.year"><strong>Any:</strong> {{ response.year }}</p>
       <p class="description" v-if="response && response.year"><strong>Tècnica:</strong> {{ response.technique }}</p>
@@ -74,9 +74,9 @@
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100vw;
-  height: 80vh;
-  overflow: hidden; /* Prevent scrolling */
-  margin-top: 20px;
+  height: 100vh;
+  overflow: hidden;
+  padding: 16px;
 }
 
   .image-viewer img {
@@ -84,21 +84,46 @@
     width: 82%; /* Reduced width to fit description */
     height: 75%;
     margin-bottom: -4px; /* Add some space between image and description */
+    margin: 0 auto; /* Center the image horizontally */
+
   }
   
   .description {
     font-size: 14px;
     font-family: Arial, sans-serif;
     color: #333;
-    text-align: center;
+    text-align: center;  
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow-y: auto;
+    max-height: 100px;
   }
 
-@media only screen and (max-width: 768px) {
   .back-button {
     position: relative;
     left: 0;
     transform: none;
-    margin: 16px auto;
+    margin: 50px auto;
+    display: block;
+  }
+
+@media only screen and (max-width: 768px) {
+  .image-viewer {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    padding: 16px;
+  }
+  .back-button {
+    position: relative;
+    left: 0;
+    transform: none;
+    margin: 0px auto;
     display: block;
   }
 }
