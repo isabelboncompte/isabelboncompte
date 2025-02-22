@@ -1,5 +1,5 @@
 <script setup>
-import retrats from '../assets/obra/retrats.json'
+import retrats from '../assets/obra/retratsifigura.json'
 import Gallery from '../components/Gallery.vue'
 </script>
 

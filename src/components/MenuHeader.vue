@@ -39,10 +39,10 @@ export default {
   data() {
     return {
       menu: [
-        { label: 'Retrats', to: '/obra/retrats' },
-        { label: 'Postals', to: '/obra/postals' },
         { label: 'Picorandan', to: '/obra/picorandan' },
         { label: 'Natures Mortes', to: '/obra/naturesmortes' },
+        { label: 'Retrats i Figura', to: '/obra/retratsifigura' },
+        { label: 'Postals', to: '/obra/postals' },
         { label: 'Murs i camins', to: '/obra/mursicamins' },
         { label: 'Miscel·lània', to: '/obra/miscellania' },
         { label: 'Homenatge a Chantal Maillard', to: '/obra/homenatgeachantalmaillard' },
