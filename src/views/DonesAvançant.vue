@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       name: 'dones_avançant',
-      title: 'Dones avançant'
+      title: 'Dones Avançant'
     };
   },
 };

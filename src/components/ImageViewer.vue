@@ -6,13 +6,13 @@
       <font-awesome-icon icon="fa-solid fa-arrow-left" />
       </button>
     <div class="image-container">
-    <img :src="currentImage" />
+      <img :src="currentImage" />
     </div>
     <!--img :src="currentImage" style="padding-top: 16px;" /-->
     <h6 class="title is-5 title-margin" v-if="response && response.name">{{ response.name }}</h6>
     <p class="description" v-if="response && response.year"><strong>Any:</strong> {{ response.year }}</p>
     <p class="description" v-if="response && response.year"><strong>Tècnica:</strong> {{ response.technique }}</p>
-    <p class="description" v-if="response && response.size"><strong>Mida:</strong> {{ response.size.height }} x {{ response.size.weight }}cm</p>
+    <p class="description" v-if="response && response.size"><strong>Mida:</strong> {{ response.size.width }} x {{ response.size.height }}cm</p>
 
   </div>
 </template>
@@ -125,6 +125,11 @@
   margin: 0px;
 }
 
+.image-container img {
+  object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+}
 
 @media only screen and (max-width: 768px) {
   .image-viewer {

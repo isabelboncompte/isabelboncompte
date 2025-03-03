@@ -23,8 +23,8 @@
               </b-navbar-item>
             </b-navbar-dropdown>
           </b-navbar-item>
-          <b-navbar-item tag="router-link" :to="{ path: '/bibliografia' }">
-            Bibliografia
+          <b-navbar-item tag="router-link" :to="{ path: '/biografia' }">
+            Biografia
           </b-navbar-item>
         </template>
       </b-navbar>
