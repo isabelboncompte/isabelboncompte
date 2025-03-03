@@ -20,7 +20,7 @@
           <h6 class="title is-4 image-title" v-if="image && image.name">{{ image.name }}</h6>
           <p class="image-description">Any: {{ image.year }}</p>
           <p class="image-description">Tècnica: {{ image.technique }}</p>
-          <p class="image-description">Mida: {{ image.size.width }} x {{ image.size.height }}</p>
+          <p class="image-description">Mida: {{ image.size.height }} x {{ image.size.width }}</p>
         </div>
       </div>
 
