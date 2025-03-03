@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       name: 'apunts_paisatge',
-      title: 'Apunts paisatge'
+      title: 'Apunts Paisatge'
     };
   },
 };

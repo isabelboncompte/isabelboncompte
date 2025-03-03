@@ -8,7 +8,7 @@ export default {
   data() {
     return {
       name: 'natures_mortes',
-      title: 'Natures mortes'
+      title: 'Natures Mortes'
     };
   },
 };
