@@ -22,17 +22,6 @@
       "name": "Apunt"
     },
     {
-        "image": "/assets/obra/Apunts figura/Louise II.jpg",
-        "size": {
-        "width": 52,
-        "height": 75,
-        "depth": null
-      },
-      "technique": "Oli sobre cartró",
-      "year": 2023,
-      "name": "Lousie II"
-    },
-    {
         "image": "/assets/obra/Apunts figura/Model A.jpg",
         "size": {
         "width": 35,
@@ -152,17 +141,6 @@
       "technique": "Oli sobre cartró",
       "year": 2022,
       "name": "Sorrut"
-    },
-    {
-        "image": "/assets/obra/Apunts figura/Louise I.jpg",
-        "size": {
-        "width": 52,
-        "height": 75,
-        "depth": null
-      },
-      "technique": "Oli sobre cartró",
-      "year": 2022,
-      "name": "Louise I"
     }
   ]
   

@@ -12,7 +12,7 @@
             Home
           </b-navbar-item>
           <b-navbar-item tag="div">
-            <b-navbar-dropdown label="Obra" right=false>
+            <b-navbar-dropdown label="Obra" right=false dropdownClass="custom-submenu">
               <b-navbar-item
                 v-for="(item, index) in menu"
                 :key="index"
@@ -62,5 +62,11 @@ export default {
   </script>
   
   <style scoped>
-  
+.custom-submenu .dropdown-trigger .icon {
+  color: grey !important;
+}
+
+.custom-submenu .dropdown-trigger .icon svg {
+  fill: grey !important;
+}
   </style>

@@ -1,18 +1,40 @@
 <template>
+  <b-skeleton v-if="!imageLoaded" width="100%" height="80vh"></b-skeleton>
+
+  <div v-if="imageLoaded" class="imageviewer">
+      <button class="back-button" @click="$router.go(-1)">
+      <font-awesome-icon icon="fa-solid fa-arrow-left" />
+      </button>
+    <div class="image-container">
+    <img :src="currentImage" />
+    </div>
+    <!--img :src="currentImage" style="padding-top: 16px;" /-->
+    <h6 class="title is-5 title-margin" v-if="response && response.name">{{ response.name }}</h6>
+    <p class="description" v-if="response && response.year"><strong>Any:</strong> {{ response.year }}</p>
+    <p class="description" v-if="response && response.year"><strong>Tècnica:</strong> {{ response.technique }}</p>
+    <p class="description" v-if="response && response.size"><strong>Mida:</strong> {{ response.size.height }} x {{ response.size.weight }}cm</p>
+
+  </div>
+</template>
+
+
+<!--template>
     <b-skeleton v-if="!imageLoaded" width="100%" height="80vh"></b-skeleton>
 
     <div v-if="imageLoaded" class="image-viewer">
         <button class="back-button" @click="$router.go(-1)">
         <font-awesome-icon icon="fa-solid fa-arrow-left" />
         </button>
-      <img :src="currentImage" style="padding-top: 16px;" />
+      <div class="image-container">
+      <img :src="currentImage" />
+      </div>
       <h6 class="title is-5 title-margin" v-if="response && response.name">{{ response.name }}</h6>
       <p class="description" v-if="response && response.year"><strong>Any:</strong> {{ response.year }}</p>
       <p class="description" v-if="response && response.year"><strong>Tècnica:</strong> {{ response.technique }}</p>
       <p class="description" v-if="response && response.size"><strong>Mida:</strong> {{ response.size.width }} x {{ response.size.height }}cm</p>
 
     </div>
-  </template>
+  </template-->
   
   <script>
   export default {
@@ -51,62 +73,58 @@
   };
   </script>
   
-  <style scoped>
-.title-margin {
-  margin-top: 4px;
+<style scoped>
+  .imageviewer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .imageviewer img {
+  object-fit: contain;
+  margin-top: -30px;
+  width: auto; /* Keep natural width */
+  height: auto; /* Keep natural height */
+  max-width: 90vw; /* Ensure it fits the screen width */
+  max-height: 70vh; /* Ensure it fits the screen height */
 }
 
-.back-button {
-  position: absolute;
-  z-index: 1;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin-left: -16px;
-  font-size: 16px;
-  cursor: pointer;
+.title-margin {
+  margin-top: 8px;
 }
 
 .image-viewer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
 }
 
-  .image-viewer img {
-    object-fit: contain;
-    width: 82%; /* Reduced width to fit description */
-    height: 75%;
-    margin-bottom: -4px; /* Add some space between image and description */
-    margin: 0 auto; /* Center the image horizontally */
+.image-viewer img {
+  object-fit: contain;
+  width: auto; /* Keep natural width */
+  height: auto; /* Keep natural height */
+  max-width: 90vw; /* Ensure it fits the screen width */
+  max-height: 70vh; /* Ensure it fits the screen height */
+}
 
-  }
-  
-  .description {
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    text-align: center;  
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
-    overflow-y: auto;
-    max-height: 100px;
-  }
+.back-button {
+  top: 0px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px;
+}
 
-  .back-button {
-    position: relative;
-    left: 0;
-    transform: none;
-    margin: 50px auto;
-    display: block;
-  }
 
 @media only screen and (max-width: 768px) {
   .image-viewer {
@@ -118,13 +136,29 @@
     height: 100vh;
     margin-top: 0;
     padding: 16px;
+    overflow-y: hidden; /* Add this line */
+
   }
   .back-button {
     position: relative;
     left: 0;
+    top: 0;
     transform: none;
-    margin: 0px auto;
+    margin: 16px auto;
     display: block;
   }
+    .header {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  .image-container {
+    margin-top: 0;
+  }
 }
+
+.image-container {
+  margin-top: 50px; /* Match the height of the header */
+}
+
+
   </style>
