@@ -81,13 +81,8 @@ export default {
   <div class="ceramica">
     <header class="intro">
       <h1 class="intro-title">Ceràmica</h1>
-      <p class="intro-text">
-        Peces úniques fetes al torn. Cada peça és irrepetible: la forma, l'esmalt
-        i el foc fan que no n'hi hagi dues d'iguals.
-      </p>
       <p class="intro-note">
         Les peces es venen exclusivament a la botiga.
-        Si t'interessa alguna peça, vine a veure-la de prop.
       </p>
     </header>
 
@@ -108,8 +103,15 @@ export default {
             </span>
           </div>
           <figcaption class="card-caption">
-            <span class="piece-name">{{ piece.name }}</span>
-            <span class="piece-price" :class="{ sold: piece.sold }">{{ priceLabel(piece) }}</span>
+            <div class="card-caption-row">
+              <span class="piece-name">{{ piece.name }}</span>
+              <span class="piece-price" :class="{ sold: piece.sold }">{{ priceLabel(piece) }}</span>
+            </div>
+            <div v-if="piece.material || piece.esmalt" class="piece-details">
+              <span v-if="piece.material">{{ piece.material }}</span>
+              <span v-if="piece.material && piece.esmalt"> · </span>
+              <span v-if="piece.esmalt">Esmalt {{ piece.esmalt }}</span>
+            </div>
           </figcaption>
         </figure>
       </div>
@@ -127,7 +129,8 @@ export default {
         <img :src="full(viewer.piece, viewer.imageIndex)" :alt="viewer.piece.name" />
         <div class="lightbox-caption">
           <span class="piece-name">{{ viewer.piece.name }}</span>
-          <span v-if="viewer.piece.technique"> · {{ viewer.piece.technique }}</span>
+          <span v-if="viewer.piece.material"> · {{ viewer.piece.material }}</span>
+          <span v-if="viewer.piece.esmalt"> · Esmalt {{ viewer.piece.esmalt }}</span>
           <span class="piece-price" :class="{ sold: viewer.piece.sold }">
             {{ priceLabel(viewer.piece) }}
           </span>
@@ -236,11 +239,20 @@ export default {
 }
 
 .card-caption {
+  margin-top: 0.7rem;
+}
+
+.card-caption-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 0.5rem;
-  margin-top: 0.7rem;
+}
+
+.piece-details {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: #8a8a8a;
 }
 
 .piece-name {

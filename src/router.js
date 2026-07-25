@@ -14,6 +14,7 @@ import ElsLlibresIlaRosa from './views/ElsLlibresILaRosa.vue'
 import DonesAvançant from './views/DonesAvançant.vue'
 import Dibuix from './views/Dibuix.vue'
 import Ceramica from './views/Ceramica.vue'
+import CeramicaGaleria from './views/CeramicaGaleria.vue'
 import Botanica from './views/Botanica.vue'
 import ApuntsPaisatge from './views/ApuntsPaisatge.vue'
 import ApuntsFigura from './views/ApuntsFigura.vue'
@@ -87,9 +88,14 @@ const routes = [
     component: Dibuix
   },
   {
-    path: '/obra/ceramica',
+    path: '/ceramica',
     name: 'Ceràmica',
     component: Ceramica
+  },
+  {
+    path: '/obra/ceramica',
+    name: 'Ceràmica (obra)',
+    component: CeramicaGaleria
   },
   {
     path: '/obra/botanica',

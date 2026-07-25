@@ -11,7 +11,7 @@
           <b-navbar-item tag="router-link" :to="{ path: '/' }">
             Home
           </b-navbar-item>
-          <b-navbar-item tag="router-link" :to="{ path: '/obra/ceramica' }">
+          <b-navbar-item tag="router-link" :to="{ path: '/ceramica' }">
             Ceràmica
           </b-navbar-item>
           <b-navbar-item tag="div">
@@ -48,6 +48,7 @@ export default {
         { label: 'Murs i Camins', to: '/obra/mursicamins' },
         { label: 'Dones Avançant', to: '/obra/donesavançant' },
         { label: 'Botànica', to: '/obra/botanica' },
+        { label: 'Ceràmica', to: '/obra/ceramica' },
         { label: 'Espriu', to: '/obra/espriu' },
         { label: 'Apunts de Retrat i Figura', to: '/obra/apuntsfigura' },
         { label: 'Apunts Paisatge', to: '/obra/apuntspaisatge' },
@@ -64,12 +65,18 @@ export default {
 }
   </script>
   
-  <style scoped>
-.custom-submenu .dropdown-trigger .icon {
-  color: grey !important;
+  <style>
+/* Buefy renders the dropdown caret and active states with its $primary
+   (purple); force the site's ochre instead. Unscoped on purpose: the
+   navbar dropdown is rendered outside this component's scope ids. */
+.navbar-item .icon,
+.navbar-link:not(.is-arrowless)::after,
+.navbar-dropdown .navbar-item.is-active {
+  color: #965c00 !important;
+  border-color: #965c00 !important;
 }
 
-.custom-submenu .dropdown-trigger .icon svg {
-  fill: grey !important;
+.navbar-burger span {
+  color: #965c00;
 }
   </style>

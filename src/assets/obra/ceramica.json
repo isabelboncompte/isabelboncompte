@@ -3,297 +3,210 @@
     "name": "Bol de porcellana",
     "category": "Bols",
     "images": ["Bol de porcellana.jpg"],
+    "material": "Porcellana",
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Bol I",
     "category": "Bols",
     "images": ["Bol I.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Bol II",
     "category": "Bols",
     "images": ["Bol II.jpg", "Bol II A.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Bol III",
     "category": "Bols",
     "images": ["Bol III.jpg", "Bol III A.jpg", "Bol III B.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Bol IV",
     "category": "Bols",
     "images": ["Bol IV.jpg", "Bol IV A.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Gerro",
     "category": "Gerros i càntirs",
     "images": ["Gerro.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Gerro I",
     "category": "Gerros i càntirs",
     "images": ["Gerro I.jpg", "Gerro I A.jpg", "Gerro I B.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Gerro II",
     "category": "Gerros i càntirs",
     "images": ["Gerro II.jpg", "Gerro II A.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Gerro III",
     "category": "Gerros i càntirs",
     "images": ["Gerro III.jpg", "Gerro III A.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Gerro IV",
     "category": "Gerros i càntirs",
     "images": ["Gerro IV.jpg", "Gerro IV A.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Gerro V",
     "category": "Gerros i càntirs",
     "images": ["Gerro V.jpg", "Gerro V A.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Gerro VI",
     "category": "Gerros i càntirs",
     "images": ["Gerro VI.jpg", "Gerro VI A.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Gerro VII",
     "category": "Gerros i càntirs",
     "images": ["Gerro VII.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Càntir",
     "category": "Gerros i càntirs",
     "images": ["Càntir.jpg", "Càntir A.jpg", "Càntir B.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Tetera I",
-    "category": "Teteres",
-    "images": ["Tetera I.jpg", "Tetera I A.jpg", "Tetera I B.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Tetera II",
-    "category": "Teteres",
-    "images": ["Tetera II.jpg", "Tetera II A.jpg", "Tetera II B.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Plat",
     "category": "Plats i plàteres",
     "images": ["Plat.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Plàtera I",
     "category": "Plats i plàteres",
     "images": ["Plàtera I.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Plàtera II",
     "category": "Plats i plàteres",
     "images": ["Plàtera II.jpg", "Plàtera II A.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Plàtera III",
     "category": "Plats i plàteres",
     "images": ["Plàtera III.jpg", "Plàtera III A.jpg", "Plàtera III B.jpg", "Plàtera III C.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Pot I",
-    "category": "Pots i melers",
+    "category": "Pots i gots",
     "images": ["Pot I.jpg", "Pot I A.jpg", "Pot I B.jpg", "Pot I C.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Pot II",
-    "category": "Pots i melers",
+    "category": "Pots i gots",
     "images": ["Pot II.jpg", "Pot II A.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
     "size": null
   },
   {
     "name": "Meler",
-    "category": "Pots i melers",
+    "category": "Pots i gots",
     "images": ["Meler.jpg"],
+    "material": null,
+    "esmalt": null,
     "price": null,
     "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Joc de taula I",
-    "category": "Jocs de taula",
-    "images": ["Joc de taula I.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Joc de taula II",
-    "category": "Jocs de taula",
-    "images": ["Joc de taula II.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Set de sushi",
-    "category": "Jocs de taula",
-    "images": ["Set de sushi.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Barbes de frare I",
-    "category": "Peces singulars",
-    "images": ["Barbes de frare I.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Barbes de frare II",
-    "category": "Peces singulars",
-    "images": ["Barbes de frare II.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Barbes de frare III",
-    "category": "Peces singulars",
-    "images": ["Barbes de frare III.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Còdol",
-    "category": "Peces singulars",
-    "images": ["Còdol.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Collaret",
-    "category": "Peces singulars",
-    "images": ["Collaret.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Manatí",
-    "category": "Peces singulars",
-    "images": ["Manatí.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
-    "size": null
-  },
-  {
-    "name": "Pedres",
-    "category": "Peces singulars",
-    "images": ["Pedres.jpg"],
-    "price": null,
-    "sold": false,
-    "technique": null,
     "size": null
   }
 ]

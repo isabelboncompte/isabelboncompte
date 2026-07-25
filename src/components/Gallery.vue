@@ -17,9 +17,9 @@
         </router-link>
         <div v-if="style === 'vertical'" class="vertical-text">
           <h6 class="title is-4 image-title" v-if="image && image.name">{{ image.name }}</h6>
-          <p class="image-description">Any: {{ image.year }}</p>
-          <p class="image-description">Tècnica: {{ image.technique }}</p>
-          <p class="image-description">Mida: {{ image.size.height }} x {{ image.size.width }}</p>
+          <p class="image-description" v-if="image.year">Any: {{ image.year }}</p>
+          <p class="image-description" v-if="image.technique">Tècnica: {{ image.technique }}</p>
+          <p class="image-description" v-if="image.size">Mida: {{ image.size.height }} x {{ image.size.width }}</p>
         </div>
       </div>
 
