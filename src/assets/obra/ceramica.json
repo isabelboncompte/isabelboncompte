@@ -2,210 +2,273 @@
   {
     "name": "Bol de porcellana",
     "category": "Bols",
-    "images": ["Bol de porcellana.jpg"],
+    "images": [
+      "Bol de porcellana.jpg"
+    ],
     "material": "Porcellana",
     "esmalt": null,
-    "price": null,
+    "price": 35,
     "sold": false,
     "size": null
   },
   {
     "name": "Bol I",
     "category": "Bols",
-    "images": ["Bol I.jpg"],
+    "images": [
+      "Bol I.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 35,
     "sold": false,
     "size": null
   },
   {
     "name": "Bol II",
     "category": "Bols",
-    "images": ["Bol II.jpg", "Bol II A.jpg"],
+    "images": [
+      "Bol II.jpg",
+      "Bol II A.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 35,
     "sold": false,
     "size": null
   },
   {
     "name": "Bol III",
     "category": "Bols",
-    "images": ["Bol III.jpg", "Bol III A.jpg", "Bol III B.jpg"],
+    "images": [
+      "Bol III.jpg",
+      "Bol III A.jpg",
+      "Bol III B.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 35,
     "sold": false,
     "size": null
   },
   {
     "name": "Bol IV",
     "category": "Bols",
-    "images": ["Bol IV.jpg", "Bol IV A.jpg"],
+    "images": [
+      "Bol IV.jpg",
+      "Bol IV A.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 35,
     "sold": false,
     "size": null
   },
   {
     "name": "Gerro",
     "category": "Gerros i càntirs",
-    "images": ["Gerro.jpg"],
+    "images": [
+      "Gerro.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 60,
     "sold": false,
     "size": null
   },
   {
     "name": "Gerro I",
     "category": "Gerros i càntirs",
-    "images": ["Gerro I.jpg", "Gerro I A.jpg", "Gerro I B.jpg"],
+    "images": [
+      "Gerro I.jpg",
+      "Gerro I A.jpg",
+      "Gerro I B.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 60,
     "sold": false,
     "size": null
   },
   {
     "name": "Gerro II",
     "category": "Gerros i càntirs",
-    "images": ["Gerro II.jpg", "Gerro II A.jpg"],
+    "images": [
+      "Gerro II.jpg",
+      "Gerro II A.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 60,
     "sold": false,
     "size": null
   },
   {
     "name": "Gerro III",
     "category": "Gerros i càntirs",
-    "images": ["Gerro III.jpg", "Gerro III A.jpg"],
+    "images": [
+      "Gerro III.jpg",
+      "Gerro III A.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 60,
     "sold": false,
     "size": null
   },
   {
     "name": "Gerro IV",
     "category": "Gerros i càntirs",
-    "images": ["Gerro IV.jpg", "Gerro IV A.jpg"],
+    "images": [
+      "Gerro IV.jpg",
+      "Gerro IV A.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 60,
     "sold": false,
     "size": null
   },
   {
     "name": "Gerro V",
     "category": "Gerros i càntirs",
-    "images": ["Gerro V.jpg", "Gerro V A.jpg"],
+    "images": [
+      "Gerro V.jpg",
+      "Gerro V A.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 60,
     "sold": false,
     "size": null
   },
   {
     "name": "Gerro VI",
     "category": "Gerros i càntirs",
-    "images": ["Gerro VI.jpg", "Gerro VI A.jpg"],
+    "images": [
+      "Gerro VI.jpg",
+      "Gerro VI A.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 60,
     "sold": false,
     "size": null
   },
   {
     "name": "Gerro VII",
     "category": "Gerros i càntirs",
-    "images": ["Gerro VII.jpg"],
+    "images": [
+      "Gerro VII.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 60,
     "sold": false,
     "size": null
   },
   {
     "name": "Càntir",
     "category": "Gerros i càntirs",
-    "images": ["Càntir.jpg", "Càntir A.jpg", "Càntir B.jpg"],
+    "images": [
+      "Càntir.jpg",
+      "Càntir A.jpg",
+      "Càntir B.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 60,
     "sold": false,
     "size": null
   },
   {
     "name": "Plat",
     "category": "Plats i plàteres",
-    "images": ["Plat.jpg"],
+    "images": [
+      "Plat.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 45,
     "sold": false,
     "size": null
   },
   {
     "name": "Plàtera I",
     "category": "Plats i plàteres",
-    "images": ["Plàtera I.jpg"],
+    "images": [
+      "Plàtera I.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 45,
     "sold": false,
     "size": null
   },
   {
     "name": "Plàtera II",
     "category": "Plats i plàteres",
-    "images": ["Plàtera II.jpg", "Plàtera II A.jpg"],
+    "images": [
+      "Plàtera II.jpg",
+      "Plàtera II A.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 45,
     "sold": false,
     "size": null
   },
   {
     "name": "Plàtera III",
     "category": "Plats i plàteres",
-    "images": ["Plàtera III.jpg", "Plàtera III A.jpg", "Plàtera III B.jpg", "Plàtera III C.jpg"],
+    "images": [
+      "Plàtera III.jpg",
+      "Plàtera III A.jpg",
+      "Plàtera III B.jpg",
+      "Plàtera III C.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 45,
     "sold": false,
     "size": null
   },
   {
     "name": "Pot I",
     "category": "Pots i gots",
-    "images": ["Pot I.jpg", "Pot I A.jpg", "Pot I B.jpg", "Pot I C.jpg"],
+    "images": [
+      "Pot I.jpg",
+      "Pot I A.jpg",
+      "Pot I B.jpg",
+      "Pot I C.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 30,
     "sold": false,
     "size": null
   },
   {
     "name": "Pot II",
     "category": "Pots i gots",
-    "images": ["Pot II.jpg", "Pot II A.jpg"],
+    "images": [
+      "Pot II.jpg",
+      "Pot II A.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 30,
     "sold": false,
     "size": null
   },
   {
     "name": "Meler",
     "category": "Pots i gots",
-    "images": ["Meler.jpg"],
+    "images": [
+      "Meler.jpg"
+    ],
     "material": null,
     "esmalt": null,
-    "price": null,
+    "price": 30,
     "sold": false,
     "size": null
   }

@@ -92,18 +92,18 @@ export default {
         <figure
           v-for="piece in category.pieces"
           :key="piece.name"
-          class="card"
+          class="peca"
           :class="{ 'is-sold': piece.sold }"
           @click="open(piece)"
         >
-          <div class="card-image">
+          <div class="peca-image">
             <img :src="thumb(piece)" :alt="piece.name" loading="lazy" />
             <span v-if="piece.images.length > 1" class="more-views">
               +{{ piece.images.length - 1 }}
             </span>
           </div>
-          <figcaption class="card-caption">
-            <div class="card-caption-row">
+          <figcaption class="peca-caption">
+            <div class="peca-caption-row">
               <span class="piece-name">{{ piece.name }}</span>
               <span class="piece-price" :class="{ sold: piece.sold }">{{ priceLabel(piece) }}</span>
             </div>
@@ -148,12 +148,13 @@ export default {
 
 <style scoped>
 .ceramica {
-  padding: 0 1rem;
+  /* horizontal gutter comes from App.vue's shared .body padding */
+  padding: 0;
 }
 
 .intro {
   max-width: 640px;
-  margin: 3rem auto 4rem;
+  margin: 2.5rem auto;
   text-align: center;
 }
 
@@ -180,7 +181,7 @@ export default {
 }
 
 .category {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .category-title {
@@ -200,30 +201,30 @@ export default {
   gap: 2rem 1.5rem;
 }
 
-.card {
+.peca {
   margin: 0;
   cursor: pointer;
 }
 
-.card-image {
+.peca-image {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #f4f1ec;
 }
 
-.card-image img {
+.peca-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.card:hover .card-image img {
+.peca:hover .peca-image img {
   transform: scale(1.03);
 }
 
-.is-sold .card-image img {
+.is-sold .peca-image img {
   opacity: 0.75;
 }
 
@@ -238,11 +239,11 @@ export default {
   border-radius: 2px;
 }
 
-.card-caption {
+.peca-caption {
   margin-top: 0.7rem;
 }
 
-.card-caption-row {
+.peca-caption-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;

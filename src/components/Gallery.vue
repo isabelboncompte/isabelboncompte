@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="ml-3 mr-3">
+    <div>
       <div class="row">
         <h1 class="title">{{ title }}</h1>
         <font-awesome-icon  v-if="!isPhoneScreen" :icon="iconName" @click="toggleStyle">
@@ -9,7 +9,7 @@
     </div>
 
 
-    <div :class="['gallery', style]" class="m-2">
+    <div :class="['gallery', style]">
       <div v-for="(image, index) in images" :key="index" class="gallery-item">
         <router-link :to="{ name: 'image-viewer', params: { index }, query: { name } }">
           <img :src="resolve(image.image)" :alt="image.name" loading="lazy" :class="{ 'max-height': style === 'vertical' }"  />

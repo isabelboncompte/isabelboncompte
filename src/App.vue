@@ -25,22 +25,26 @@ export default {
   min-height: 100vh;
 }
 
-.header {
-  max-width: 1280px;
-  margin: 0 auto;
-  font-weight: normal;
-}
-
+/* One shared gutter for header and content so everything lines up. */
+.header,
 .body {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 1.5rem;
   font-weight: normal;
-  /* Other styles */
 }
 
 .peu {
   max-width: 1280px;
   font-weight: normal;
   height: 40px;
+}
+
+@media (max-width: 768px) {
+  .header,
+  .body {
+    padding: 0 1rem;
+  }
 }
 </style>
