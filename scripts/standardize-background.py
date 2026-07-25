@@ -46,16 +46,32 @@ def process(src, dst):
     oy = int(side * 0.62 - h / 2)
     oy = max(int(side * 0.08), min(oy, side - h - int(side * 0.06)))
 
-    # Elliptical contact shadow under the base of the piece
+    # Measure the piece's real footprint: opaque pixels in the bottom 4%
+    # of the cutout. A vase yields its base width; a top-down plate yields
+    # its narrow lower rim, avoiding the "standing coin" shadow effect.
+    alpha = cut.getchannel('A')
+    band_h = max(1, int(h * 0.04))
+    band = alpha.crop((0, h - band_h, w, h))
+    bband = band.point(lambda v: 255 if v > 40 else 0)
+    fb = bband.getbbox()
+    if fb:
+        foot_w = fb[2] - fb[0]
+        foot_cx = ox + (fb[0] + fb[2]) // 2
+    else:
+        foot_w = int(w * 0.6)
+        foot_cx = ox + w // 2
+    foot_w = max(foot_w, int(w * 0.25))
+
+    # Elliptical contact shadow sized to the footprint
     shadow = Image.new('L', (side, side), 0)
     d = ImageDraw.Draw(shadow)
-    sw = int(w * 0.82)
-    sh = max(int(side * 0.045), 8)
-    cx, base = side // 2, oy + h
-    d.ellipse([cx - sw // 2, base - sh, cx + sw // 2, base + sh], fill=110)
-    shadow = shadow.filter(ImageFilter.GaussianBlur(side // 45))
+    sw = int(foot_w * 1.15)
+    sh = max(int(sw * 0.14), 6)
+    base = oy + h
+    d.ellipse([foot_cx - sw // 2, base - sh, foot_cx + sw // 2, base + sh], fill=110)
+    shadow = shadow.filter(ImageFilter.GaussianBlur(max(side // 70, 4)))
     dark = Image.new('RGB', (side, side), (96, 86, 74))
-    canvas = Image.composite(dark, canvas, shadow.point(lambda v: int(v * 0.55)))
+    canvas = Image.composite(dark, canvas, shadow.point(lambda v: int(v * 0.5)))
 
     canvas.paste(cut, (ox, oy), cut)
     canvas.thumbnail((2000, 2000))
