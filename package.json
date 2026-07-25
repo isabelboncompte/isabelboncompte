@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp dist/index.html dist/404.html",
+    "build": "vite build && node scripts/purge-css.mjs && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -15,16 +15,13 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "buefy": "npm:@ntohq/buefy-next@^0.2.0",
-    "masonry-layout": "^4.2.2",
-    "node-sass-tilde-importer": "^1.0.2",
-    "sass": "^1.85.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
     "gh-pages": "^6.3.0",
-    "sass-embedded": "^1.85.0",
+    "purgecss": "^8.0.0",
     "vite": "^6.0.11",
     "vite-imagetools": "^9.0.3",
     "vite-plugin-vue-devtools": "^7.7.1"

@@ -35,31 +35,12 @@
   </template>
   
   <script>
-import { RouterLink } from 'vue-router'
+import { menuItems } from '../series.js'
 
 export default {
-  components: { RouterLink },
   data() {
     return {
-      menu: [
-        { label: 'Picorandan', to: '/obra/picorandan' },
-        { label: 'Natures Mortes', to: '/obra/naturesmortes' },
-        { label: 'Retrats i Figura', to: '/obra/retratsifigura' },
-        { label: 'Murs i Camins', to: '/obra/mursicamins' },
-        { label: 'Dones Avançant', to: '/obra/donesavançant' },
-        { label: 'Botànica', to: '/obra/botanica' },
-        { label: 'Ceràmica', to: '/obra/ceramica' },
-        { label: 'Espriu', to: '/obra/espriu' },
-        { label: 'Apunts de Retrat i Figura', to: '/obra/apuntsfigura' },
-        { label: 'Apunts Paisatge', to: '/obra/apuntspaisatge' },
-        { label: 'Dibuixos', to: '/obra/dibuix' },
-        { label: 'Postals', to: '/obra/postals' },
-        { label: 'Miscel·lània', to: '/obra/miscellania' },
-        // { label: 'Homenatge a Chantal Maillard', to: '/obra/homenatgeachantalmaillard' },
-        // { label: 'Els llibres i la rosa', to: '/obra/elsllibresilarosa' },
-        // { label: 'Gravat', to: '/obra/gravat' },
-
-      ],
+      menu: menuItems,
     }
   },
 }
