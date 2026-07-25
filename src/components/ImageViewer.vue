@@ -8,7 +8,6 @@
     <div class="image-container">
       <img :src="currentImage" />
     </div>
-    <!--img :src="currentImage" style="padding-top: 16px;" /-->
     <h6 class="title is-5 title-margin" v-if="response && response.name">{{ response.name }}</h6>
     <p class="description" v-if="response && response.year"><strong>Any:</strong> {{ response.year }}</p>
     <p class="description" v-if="response && response.year"><strong>Tècnica:</strong> {{ response.technique }}</p>
@@ -18,23 +17,6 @@
 </template>
 
 
-<!--template>
-    <b-skeleton v-if="!imageLoaded" width="100%" height="80vh"></b-skeleton>
-
-    <div v-if="imageLoaded" class="image-viewer">
-        <button class="back-button" @click="$router.go(-1)">
-        <font-awesome-icon icon="fa-solid fa-arrow-left" />
-        </button>
-      <div class="image-container">
-      <img :src="currentImage" />
-      </div>
-      <h6 class="title is-5 title-margin" v-if="response && response.name">{{ response.name }}</h6>
-      <p class="description" v-if="response && response.year"><strong>Any:</strong> {{ response.year }}</p>
-      <p class="description" v-if="response && response.year"><strong>Tècnica:</strong> {{ response.technique }}</p>
-      <p class="description" v-if="response && response.size"><strong>Mida:</strong> {{ response.size.width }} x {{ response.size.height }}cm</p>
-
-    </div>
-  </template-->
   
   <script>
   // Series data is bundled at build time; images are resized WebP served
@@ -101,27 +83,7 @@
   margin-top: 8px;
 }
 
-.image-viewer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 
-}
-
-.image-viewer img {
-  object-fit: contain;
-  width: auto; /* Keep natural width */
-  height: auto; /* Keep natural height */
-  max-width: 90vw; /* Ensure it fits the screen width */
-  max-height: 70vh; /* Ensure it fits the screen height */
-}
 
 .back-button {
   top: 0px;

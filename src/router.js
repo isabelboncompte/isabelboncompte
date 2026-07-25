@@ -1,25 +1,7 @@
 // src/router.js
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './views/Home.vue'
-import RetratsIFigura from './views/RetratsIFigura.vue'
-import Postals from './views/Postals.vue'
-import Picorandan from './views/Picorandan.vue'
-import NaturesMortes from './views/NaturesMortes.vue'
-import Miscellania from './views/Miscellania.vue'
-import MursICamins from './views/MursICamins.vue'
-import HomenatgeAChantalMaillard from './views/HomenatgeAChantalMaillard.vue'
-import Gravat from './views/Gravat.vue'
-import Espriu from './views/Espriu.vue'
-import ElsLlibresIlaRosa from './views/ElsLlibresILaRosa.vue'
-import DonesAvançant from './views/DonesAvançant.vue'
-import Dibuix from './views/Dibuix.vue'
-import Ceramica from './views/Ceramica.vue'
-import CeramicaGaleria from './views/CeramicaGaleria.vue'
-import Botanica from './views/Botanica.vue'
-import ApuntsPaisatge from './views/ApuntsPaisatge.vue'
-import ApuntsFigura from './views/ApuntsFigura.vue'
-import ImageViewer from './components/ImageViewer.vue'
-import Bibliografia from './views/Biografia.vue'
+import { series } from './series.js'
 
 const routes = [
   {
@@ -28,100 +10,28 @@ const routes = [
     component: Home
   },
   {
-    path: '/obra/retratsifigura',
-    name: 'Retrats i Figura',
-    component: RetratsIFigura
-  },
-  {
-    path: '/obra/postals',
-    name: 'Postals',
-    component: Postals
-  },
-  {
-    path: '/obra/picorandan',
-    name: 'Picorandan',
-    component: Picorandan
-  },
-  {
-    path: '/obra/naturesmortes',
-    name: 'Natures Mortes',
-    component: NaturesMortes
-  },
-  {
-    path: '/obra/mursicamins',
-    name: 'Murs i Camins',
-    component: MursICamins
-  },
-  {
-    path: '/obra/miscellania',
-    name: 'Miscel·lania',
-    component: Miscellania
-  },
-  {
-    path: '/obra/homenatgeachantalmaillard',
-    name: 'Homenatge a Chantal Maillard',
-    component: HomenatgeAChantalMaillard
-  },
-  {
-    path: '/obra/gravat',
-    name: 'Gravat',
-    component: Gravat
-  },
-  {
-    path: '/obra/espriu',
-    name: 'Espriu',
-    component: Espriu
-  },
-  {
-    path: '/obra/elsllibresilarosa',
-    name: 'Els llibres i la rosa',
-    component: ElsLlibresIlaRosa
-  },
-  {
-    path: '/obra/donesavançant',
-    name: 'Dones Avançant',
-    component: DonesAvançant
-  },
-  {
-    path: '/obra/dibuix',
-    name: 'Dibuix',
-    component: Dibuix
-  },
-  {
     path: '/ceramica',
     name: 'Ceràmica',
-    component: Ceramica
+    component: () => import('./views/Ceramica.vue')
   },
   {
-    path: '/obra/ceramica',
-    name: 'Ceràmica (obra)',
-    component: CeramicaGaleria
-  },
-  {
-    path: '/obra/botanica',
-    name: 'Botànica',
-    component: Botanica
-  },
-  {
-    path: '/obra/apuntsfigura',
-    name: 'Apunts figura',
-    component: ApuntsFigura
-  },
-  {
-    path: '/obra/apuntspaisatge',
-    name: 'Apunts paisatge',
-    component: ApuntsPaisatge
+    path: '/obra/:slug',
+    name: 'obra-serie',
+    component: () => import('./views/ObraSerie.vue'),
+    beforeEnter: (to) => {
+      if (!series[to.params.slug]) return { path: '/' }
+    }
   },
   {
     path: '/image/:index',
     name: 'image-viewer',
-    component: ImageViewer,
+    component: () => import('./components/ImageViewer.vue'),
     props: true,
   },
   {
     path: '/biografia',
     name: 'biografia',
-    component: Bibliografia,
+    component: () => import('./views/Biografia.vue'),
   },
 ]
 
