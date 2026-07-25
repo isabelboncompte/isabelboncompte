@@ -1,7 +1,6 @@
 <template>
   <div>
-    <b-skeleton v-if="!imagesLoaded" width="100%" height="80vh"></b-skeleton>
-    <div v-if="imagesLoaded" class="ml-3 mr-3">
+    <div>
       <div class="row">
         <h1 class="title">{{ title }}</h1>
         <font-awesome-icon  v-if="!isPhoneScreen" :icon="iconName" @click="toggleStyle">
@@ -10,17 +9,17 @@
     </div>
 
 
-    <div v-if="imagesLoaded" :class="['gallery', style]" class="m-2">
+    <div :class="['gallery', style]">
       <div v-for="(image, index) in images" :key="index" class="gallery-item">
         <router-link :to="{ name: 'image-viewer', params: { index }, query: { name } }">
-          <img :src="`${github}${image.image}`" :alt="image.name" :class="{ 'max-height': style === 'vertical' }"  />
+          <img :src="resolve(image.image)" :alt="image.name" loading="lazy" :class="{ 'max-height': style === 'vertical' }"  />
           <span v-if="style === 'grid'" class="image-name">{{ image.name }}</span>
         </router-link>
         <div v-if="style === 'vertical'" class="vertical-text">
           <h6 class="title is-4 image-title" v-if="image && image.name">{{ image.name }}</h6>
-          <p class="image-description">Any: {{ image.year }}</p>
-          <p class="image-description">Tècnica: {{ image.technique }}</p>
-          <p class="image-description">Mida: {{ image.size.height }} x {{ image.size.width }}</p>
+          <p class="image-description" v-if="image.year">Any: {{ image.year }}</p>
+          <p class="image-description" v-if="image.technique">Tècnica: {{ image.technique }}</p>
+          <p class="image-description" v-if="image.size">Mida: {{ image.size.height }} x {{ image.size.width }}</p>
         </div>
       </div>
 
@@ -29,6 +28,14 @@
 </template>
 
 <script>
+// All artwork is resized to 900px-wide WebP at build time and served from the
+// site itself instead of full-resolution JPGs from raw.githubusercontent.com.
+const optimized = import.meta.glob('../assets/obra/**/*.jpg', {
+  eager: true,
+  import: 'default',
+  query: { format: 'webp', w: 900, quality: 80 }
+})
+
 export default {
   props: {
     images: {
@@ -45,30 +52,20 @@ export default {
   },
   data() {
     return {
-      github: 'https://raw.githubusercontent.com/isabelboncompte/isabelboncompte/refs/heads/main/src',
-      imagesLoaded: false,
-      style: localStorage.getItem('galleryStyle') || 'grid', 
+      style: localStorage.getItem('galleryStyle') || 'grid',
       iconName: 'fa-solid fa-th-large',
       isPhoneScreen: window.innerWidth < 768
     };
   },
   mounted() {
-    // Create a new Promise that resolves when all images are loaded
-    Promise.all(this.images.map(image => {
-      return new Promise(resolve => {
-        const img = new Image();
-        img.onload = () => {
-          resolve();
-        };
-        img.src = `${this.github}${image.image}`;
-      });
-    })).then(() => {
-      this.imagesLoaded = true;
-    });
     window.addEventListener('resize', this.updateIsPhoneScreen);
     this.updateIsPhoneScreen();
   },
   methods: {
+    resolve(imagePath) {
+      // JSON paths look like "/assets/obra/Botànica/Rosella.jpg"
+      return optimized[`..${imagePath}`];
+    },
     toggleStyle() {
       this.style = this.style === 'grid' ? 'vertical' : 'grid';
       this.iconName = this.iconName === 'fa-solid fa-th-large' ? 'fa-solid fa-th-list' : 'fa-solid fa-th-large';
