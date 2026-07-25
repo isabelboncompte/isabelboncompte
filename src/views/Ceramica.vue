@@ -216,7 +216,8 @@ export default {
 .peca-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* contain instead of cover: show the whole piece, never crop it */
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
 
