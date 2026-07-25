@@ -1,20 +1,20 @@
 <script>
 import ceramica from '../assets/obra/ceramica.json'
 
-const thumbs = import.meta.glob('../assets/obra/Ceràmica/*.jpg', {
+const thumbs = import.meta.glob('../assets/obra/Botiga/*.jpg', {
   eager: true,
   import: 'default',
   query: { format: 'webp', w: 900, quality: 80 }
 })
 
-const fulls = import.meta.glob('../assets/obra/Ceràmica/*.jpg', {
+const fulls = import.meta.glob('../assets/obra/Botiga/*.jpg', {
   eager: true,
   import: 'default',
   query: { format: 'webp', w: 1600, quality: 85 }
 })
 
 function assetFor(map, file) {
-  return map[`../assets/obra/Ceràmica/${file}`]
+  return map[`../assets/obra/Botiga/${file}`]
 }
 
 export default {
