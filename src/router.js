@@ -1,5 +1,5 @@
 // src/router.js
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from './views/Home.vue'
 import RetratsIFigura from './views/RetratsIFigura.vue'
 import Postals from './views/Postals.vue'
@@ -126,8 +126,16 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
+})
+
+// Old links used hash routing (isabelboncompte.com/#/obra/...). Redirect
+// them to the equivalent clean URL so bookmarks and shared links keep working.
+router.beforeEach((to) => {
+  if (to.path === '/' && to.hash.startsWith('#/')) {
+    return { path: to.hash.slice(1), replace: true }
+  }
 })
 
 export default router
