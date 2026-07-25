@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../assets/obra/Murs i camins/Paret del brugent al pont vell.jpg" id="full-width-image" />
+    <img src="../assets/obra/Murs i camins/Paret del brugent al pont vell.jpg?format=webp&w=1600&quality=85" id="full-width-image" />
     <h1 class="title is-1 has-text-centered mt-6 smaller-text-on-mobile">ISABEL BONCOMPTE</h1>
 
     <div class="row">
@@ -13,7 +13,7 @@
         <p>En ceràmica l’experimentació en el torn</p>
       </div>
       <div class="column image-column">
-        <img src="../assets/obra/Retrats/Moment.jpg" id="full-width-image" />
+        <img src="../assets/obra/Retrats/Moment.jpg?format=webp&w=1200&quality=85" id="full-width-image" />
       </div>
     </div>
   </div>

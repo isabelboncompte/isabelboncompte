@@ -37,10 +37,22 @@
   </template-->
   
   <script>
+  // Series data is bundled at build time; images are resized WebP served
+  // from the site itself instead of raw.githubusercontent.com.
+  const series = import.meta.glob('../assets/obra/*.json', {
+    eager: true,
+    import: 'default'
+  })
+
+  const optimized = import.meta.glob('../assets/obra/**/*.jpg', {
+    eager: true,
+    import: 'default',
+    query: { format: 'webp', w: 1600, quality: 85 }
+  })
+
   export default {
     data() {
       return {
-        github: 'https://raw.githubusercontent.com/isabelboncompte/isabelboncompte/refs/heads/main/src',
         name: null,
         index: null,
         currentImage: null,
@@ -49,25 +61,21 @@
         imageLoaded: false,
       };
     },
-    async mounted() {
+    mounted() {
       try {
         const { index } = this.$route.params;
         const { name } = this.$route.query;
         this.index = index;
         this.name = name;
-        const json = await fetch('https://raw.githubusercontent.com/isabelboncompte/isabelboncompte/main/src/assets/obra/'+ this.$route.query.name +'.json');
-        const response = await json.json();
-        console.log(response)
-        // Use the botanica data here
-        console.log(response[index])
-  
-        this.currentImage = `${this.github}${response[index].image}`;
+        const response = series[`../assets/obra/${name}.json`];
+
+        this.currentImage = optimized[`..${response[index].image}`];
         this.response = response[index];
 
-        this.description = response[index].description; // Assuming 'description' is a key in your JSON
+        this.description = response[index].description;
         this.imageLoaded = true;
       } catch (error) {
-        console.error('Error loading JSON:', error);
+        console.error('Error loading series data:', error);
       }
     }
   };

@@ -11,6 +11,9 @@
           <b-navbar-item tag="router-link" :to="{ path: '/' }">
             Home
           </b-navbar-item>
+          <b-navbar-item tag="router-link" :to="{ path: '/obra/ceramica' }">
+            Ceràmica
+          </b-navbar-item>
           <b-navbar-item tag="div">
             <b-navbar-dropdown label="Obra" right=false dropdownClass="custom-submenu">
               <b-navbar-item
