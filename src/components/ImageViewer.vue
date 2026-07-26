@@ -26,14 +26,12 @@
       >›</button>
     </div>
 
-    <h1 class="work-title">{{ work.name }}</h1>
-    <p class="work-meta">
-      <template v-if="work.year">{{ work.year }}</template>
-      <template v-if="work.year && work.technique"> · </template>
-      <template v-if="work.technique">{{ tTechnique(work.technique) }}</template>
-      <template v-if="(work.year || work.technique) && work.size"> · </template>
-      <template v-if="work.size">{{ work.size.width }} × {{ work.size.height }} cm</template>
-    </p>
+    <div class="work-label">
+      <h1 class="work-title">{{ work.name }}</h1>
+      <p v-if="work.year" class="work-year">{{ work.year }}</p>
+      <p v-if="work.technique" class="work-technique">{{ tTechnique(work.technique) }}</p>
+      <p v-if="work.size" class="work-size">{{ work.size.width }} × {{ work.size.height }} cm</p>
+    </div>
   </div>
 </template>
 
@@ -172,45 +170,77 @@ export default {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
-  border: none;
+  background: rgba(250, 248, 244, 0.85);
+  border: 1px solid var(--color-hairline);
+  border-radius: 50%;
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   line-height: 1;
-  color: var(--color-muted);
-  padding: 0.5rem;
-  min-width: 48px;
-  min-height: 48px;
+  color: var(--color-ink);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 4px;
+  box-shadow: 0 1px 6px rgba(20, 18, 15, 0.12);
 }
 
 .side-arrow:hover {
   color: var(--color-accent);
+  background: #ffffff;
 }
 
 .side-arrow.left {
-  left: 0;
+  left: 0.75rem;
 }
 
 .side-arrow.right {
-  right: 0;
+  right: 0.75rem;
+}
+
+/* Museum-style wall label: stacked rows, left-aligned, centered block */
+.work-label {
+  display: inline-block;
+  text-align: left;
+  margin-top: 1.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-hairline);
 }
 
 .work-title {
-  font-size: 1.3rem;
-  margin-top: 1.25rem;
+  font-size: 1.15rem;
+  font-weight: 600;
   color: var(--color-ink);
+  margin: 0;
 }
 
-.work-meta {
-  margin-top: 0.4rem;
+.work-year {
+  margin: 0.3rem 0 0;
   font-size: 0.9rem;
   color: var(--color-muted);
 }
 
+.work-technique {
+  margin: 0.1rem 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.work-size {
+  margin: 0.1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
 @media (max-width: 768px) {
-  .side-arrow {
-    top: auto;
-    bottom: -0.5rem;
+  .side-arrow.left {
+    left: 0.5rem;
+  }
+
+  .side-arrow.right {
+    right: 0.5rem;
   }
 }
 </style>
