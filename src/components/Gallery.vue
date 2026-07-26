@@ -25,7 +25,7 @@
         <div v-if="style === 'vertical'" class="vertical-text">
           <h6 class="title is-4 image-title" v-if="image && image.name">{{ image.name }}</h6>
           <p class="image-description" v-if="image.year">{{ t('gallery.any') }}: {{ image.year }}</p>
-          <p class="image-description" v-if="image.technique">{{ t('gallery.tecnica') }}: {{ image.technique }}</p>
+          <p class="image-description" v-if="image.technique">{{ t('gallery.tecnica') }}: {{ tTechnique(image.technique) }}</p>
           <p class="image-description" v-if="image.size">{{ t('gallery.mida') }}: {{ image.size.height }} x {{ image.size.width }}</p>
         </div>
       </div>
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import { t, locale } from '../i18n.js'
+import { t, tTechnique, locale } from '../i18n.js'
 
 // All artwork is resized to 900px-wide WebP at build time and served from the
 // site itself instead of full-resolution JPGs from raw.githubusercontent.com.
@@ -77,6 +77,7 @@ export default {
   },
   methods: {
     t,
+    tTechnique,
     resolve(imagePath) {
       // JSON paths look like "/assets/obra/Botànica/Rosella.jpg"
       return optimized[`..${imagePath}`];

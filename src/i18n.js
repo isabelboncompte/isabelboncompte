@@ -134,4 +134,70 @@ export function t(key) {
   return messages[locale.value]?.[key] ?? messages.ca[key] ?? key
 }
 
+// Artwork techniques are stored in Catalan in the series JSON files;
+// translate them for display. Unknown values fall through unchanged.
+const techniques = {
+  es: {
+    'Acrílic': 'Acrílico',
+    'Acrílic sobre cartró': 'Acrílico sobre cartón',
+    'Acrílic sobre fusta': 'Acrílico sobre madera',
+    'Acrílic sobre tela': 'Acrílico sobre tela',
+    'Aquarel·la': 'Acuarela',
+    'Aquarel·la sobre paper': 'Acuarela sobre papel',
+    'Collage': 'Collage',
+    'Llapis': 'Lápiz',
+    'Llapis de color': 'Lápiz de color',
+    'Mixta sobre cartró': 'Mixta sobre cartón',
+    'Mixta sobre fusta': 'Mixta sobre madera',
+    'Mixta sobre tablex': 'Mixta sobre táblex',
+    'Oli sobre cartró': 'Óleo sobre cartón',
+    'Oli sobre cartró entelat': 'Óleo sobre cartón entelado',
+    'Oli sobre cartó': 'Óleo sobre cartón',
+    'Oli sobre fusta': 'Óleo sobre madera',
+    'Oli sobre llenç': 'Óleo sobre lienzo',
+    'Oli sobre tablex': 'Óleo sobre táblex',
+    'Oli sobre tela': 'Óleo sobre tela',
+    'Pastel sobre cartolina': 'Pastel sobre cartulina',
+    'Pastel sobre paper': 'Pastel sobre papel',
+    'Punta seca': 'Punta seca',
+    'Rotulador sobre paper': 'Rotulador sobre papel',
+    'Tinta': 'Tinta',
+    'Tinta i llapis sobre paper': 'Tinta y lápiz sobre papel',
+    'Tinta sobre paper': 'Tinta sobre papel',
+  },
+  en: {
+    'Acrílic': 'Acrylic',
+    'Acrílic sobre cartró': 'Acrylic on cardboard',
+    'Acrílic sobre fusta': 'Acrylic on wood',
+    'Acrílic sobre tela': 'Acrylic on canvas',
+    'Aquarel·la': 'Watercolour',
+    'Aquarel·la sobre paper': 'Watercolour on paper',
+    'Collage': 'Collage',
+    'Llapis': 'Pencil',
+    'Llapis de color': 'Coloured pencil',
+    'Mixta sobre cartró': 'Mixed media on cardboard',
+    'Mixta sobre fusta': 'Mixed media on wood',
+    'Mixta sobre tablex': 'Mixed media on hardboard',
+    'Oli sobre cartró': 'Oil on cardboard',
+    'Oli sobre cartró entelat': 'Oil on canvas-lined cardboard',
+    'Oli sobre cartó': 'Oil on cardboard',
+    'Oli sobre fusta': 'Oil on wood',
+    'Oli sobre llenç': 'Oil on canvas',
+    'Oli sobre tablex': 'Oil on hardboard',
+    'Oli sobre tela': 'Oil on canvas',
+    'Pastel sobre cartolina': 'Pastel on card',
+    'Pastel sobre paper': 'Pastel on paper',
+    'Punta seca': 'Drypoint',
+    'Rotulador sobre paper': 'Marker on paper',
+    'Tinta': 'Ink',
+    'Tinta i llapis sobre paper': 'Ink and pencil on paper',
+    'Tinta sobre paper': 'Ink on paper',
+  },
+}
+
+export function tTechnique(value) {
+  if (!value) return value
+  return techniques[locale.value]?.[value.trim()] ?? value
+}
+
 document.documentElement.lang = locale.value
