@@ -1,6 +1,5 @@
 :root {
-  --font-serif: 'EB Garamond', Georgia, serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   --color-background: #faf8f4;
   --color-surface: #ffffff;
   --color-ink: #2c2c2c;

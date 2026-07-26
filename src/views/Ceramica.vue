@@ -211,10 +211,10 @@ export default {
 }
 
 .intro-title {
-  font-family: var(--font-serif);
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 400;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--color-ink);
 }
 
@@ -437,7 +437,7 @@ export default {
   }
 
   .intro-title {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
 
   .lightbox-arrow {

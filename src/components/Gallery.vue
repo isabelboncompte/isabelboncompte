@@ -93,7 +93,8 @@ export default {
 
 <style scoped>
 .title {
-  font-size: 2.25rem;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
   margin: 2rem auto 1.5rem;
 }
 

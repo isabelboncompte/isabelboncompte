@@ -62,13 +62,8 @@ export default {
 }
 
 .navbar,
-.navbar-menu {
-  background-color: transparent;
-}
-
-.navbar-brand .navbar-item {
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  color: var(--color-ink) !important;
+.navbar-menu,
+.navbar-dropdown {
+  background-color: var(--color-background) !important;
 }
   </style>

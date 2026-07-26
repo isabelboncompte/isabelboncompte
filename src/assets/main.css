@@ -40,20 +40,18 @@ a,
 }
 
 
-/* --- Site-wide type system: quiet serif display, sans labels --- */
+/* --- Site-wide headings: previous sans style, unified weight/color --- */
 .title,
 h1,
 h2,
 h3 {
-  font-family: var(--font-serif);
-  font-weight: 400 !important;
+  font-family: var(--font-sans);
   color: var(--color-ink);
 }
 
 .title.is-1 {
   font-size: 2.5rem;
-  letter-spacing: 0.01em;
-  text-transform: none;
+  letter-spacing: 0.02em;
 }
 
 .title.is-2 {
