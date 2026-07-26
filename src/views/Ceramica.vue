@@ -211,11 +211,11 @@ export default {
 }
 
 .intro-title {
-  font-size: 2.25rem;
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
   font-weight: 400;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #2c2c2c;
+  letter-spacing: 0.01em;
+  color: var(--color-ink);
 }
 
 .intro-text {
@@ -277,7 +277,7 @@ export default {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: #f4f1ec;
+  background: #f7f5f0;
 }
 
 .peca-image img {
@@ -437,7 +437,7 @@ export default {
   }
 
   .intro-title {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
   }
 
   .lightbox-arrow {

@@ -60,4 +60,15 @@ export default {
 .navbar-burger span {
   color: #965c00;
 }
+
+.navbar,
+.navbar-menu {
+  background-color: transparent;
+}
+
+.navbar-brand .navbar-item {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--color-ink) !important;
+}
   </style>

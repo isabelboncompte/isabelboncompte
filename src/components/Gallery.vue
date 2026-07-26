@@ -93,13 +93,24 @@ export default {
 
 <style scoped>
 .title {
-  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  margin: 2rem auto 1.5rem;
 }
 
 .gallery {
-  column-count: 3; /* adjust the number of columns as needed */
-  column-gap: 8px; /* adjust the gap as needed */
-  row-gap: 10px;
+  column-count: 3;
+  column-gap: 1.25rem;
+}
+
+.gallery-item {
+  margin-bottom: 1.25rem;
+  break-inside: avoid;
+}
+
+@media (max-width: 1100px) {
+  .gallery {
+    column-count: 2;
+  }
 }
 
 .gallery.vertical {
@@ -126,12 +137,14 @@ export default {
 
 .image-name {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #3d3d3d;
-  font-size: 1.2rem;
-  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem 0.75rem;
+  background: rgba(20, 18, 15, 0.65);
+  color: #f4f1ec;
+  font-size: 0.9rem;
+  text-align: left;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   pointer-events: none;
@@ -149,7 +162,7 @@ export default {
 }
 
 .gallery-item:hover img {
-  opacity: 0.2;
+  opacity: 0.92;
 }
 
 .gallery-item:hover .image-name,
@@ -188,20 +201,20 @@ a:hover {
 .gallery.vertical .gallery-item .image-name {
   margin-top: 0.5rem;
   text-align: center;
-  color: #333;
+  color: var(--color-ink);
 }
 
 .gallery.vertical .gallery-item .image-description {
   margin-top: 0;
   text-align: center;
-  color: #333;
+  color: var(--color-ink);
 }
 
 .gallery.vertical .gallery-item .image-title {
   text-align: center;
   margin-bottom: 8px;
   margin-top: 4px;
-  color: #333;
+  color: var(--color-ink);
 }
 
 .row {
