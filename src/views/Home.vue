@@ -5,11 +5,11 @@
 
     <div class="row">
       <div class="column text-column">
-        <h2 class="title is-2 has-text-centered">Qui sóc</h2>
-        <p>Estic interessada a practicar la pintura i la ceràmica per continuar aprenent, i per deixar testimoni d’allò que m’interessa.</p>
-        <p class="mt-4">Les dues línies de treball actuals són:</p>
-        <p>En pintura, el retrat i la natura.</p>
-        <p>En ceràmica, l’experimentació al torn.</p>
+        <h2 class="title is-2 has-text-centered">{{ t('home.quisoc') }}</h2>
+        <p>{{ t('home.intro') }}</p>
+        <p class="mt-4">{{ t('home.linies') }}</p>
+        <p>{{ t('home.linia1') }}</p>
+        <p>{{ t('home.linia2') }}</p>
       </div>
       <div class="column image-column">
         <img src="../assets/obra/Retrats/Moment.jpg?format=webp&w=1200&quality=85" class="full-width-image" alt="Moment — retrat a l'oli d'Isabel Boncompte" />
@@ -19,10 +19,15 @@
 </template>
 
 <script>
+import { t, locale } from '../i18n.js'
+
 export default {
-  data() {
-    return {};
+  computed: {
+    locale() {
+      return locale.value
+    },
   },
+  methods: { t },
 };
 </script>
 

@@ -1,9 +1,16 @@
 <script>
 import { RouterView } from 'vue-router'
 import MenuHeader from './components/MenuHeader.vue'
+import { t, locale } from './i18n.js'
 
 export default {
-  components: { MenuHeader, RouterView }
+  components: { MenuHeader, RouterView },
+  computed: {
+    locale() {
+      return locale.value
+    },
+  },
+  methods: { t },
 }
 </script>
 
@@ -19,21 +26,21 @@ export default {
       <div class="peu-cols">
         <div class="peu-col peu-brand">
           <p class="peu-name">Isabel Boncompte</p>
-          <p class="peu-sub">Pintura i ceràmica</p>
+          <p class="peu-sub">{{ t('footer.sub') }}</p>
         </div>
         <div class="peu-col">
-          <h3 class="peu-label">Contacte</h3>
+          <h3 class="peu-label">{{ t('footer.contacte') }}</h3>
           <p>
             <a class="peu-link" href="mailto:info@isabelboncompte.com">info@isabelboncompte.com</a>
           </p>
         </div>
         <div class="peu-col">
-          <h3 class="peu-label">Botiga</h3>
-          <p>Les peces de ceràmica es venen exclusivament a la botiga.</p>
+          <h3 class="peu-label">{{ t('footer.botiga') }}</h3>
+          <p>{{ t('footer.botigaNote') }}</p>
         </div>
       </div>
       <div class="peu-legal">
-        <p>© {{ new Date().getFullYear() }} Isabel Boncompte. Tots els drets reservats.</p>
+        <p>© {{ new Date().getFullYear() }} Isabel Boncompte. {{ t('footer.rights') }}</p>
       </div>
     </div>
   </footer>

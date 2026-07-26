@@ -2,7 +2,7 @@
   <b-skeleton v-if="!imageLoaded" width="100%" height="80vh"></b-skeleton>
 
   <div v-if="imageLoaded" class="imageviewer">
-      <button class="back-button" aria-label="Tornar enrere" @click="$router.go(-1)">
+      <button class="back-button" :aria-label="t('viewer.back')" @click="$router.go(-1)">
       <font-awesome-icon icon="fa-solid fa-arrow-left" />
       </button>
     <div class="image-container">
@@ -32,7 +32,10 @@
     query: { format: 'webp', w: 1600, quality: 85 }
   })
 
+  import { t } from '../i18n.js'
+
   export default {
+    methods: { t },
     data() {
       return {
         name: null,
