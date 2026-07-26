@@ -168,6 +168,7 @@ export default {
 
 .side-arrow {
   position: absolute;
+  z-index: 2;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(250, 248, 244, 0.85);
