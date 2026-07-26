@@ -1,16 +1,15 @@
 <template>
   <div>
     <img src="../assets/obra/Murs i camins/Paret del brugent al pont vell.jpg?format=webp&w=1600&quality=85" class="full-width-image" alt="Paret del Brugent al Pont Vell — pintura d'Isabel Boncompte" />
-    <h1 class="title is-1 has-text-centered mt-6 smaller-text-on-mobile">ISABEL BONCOMPTE</h1>
+    <h1 class="title is-1 has-text-centered mt-6">Isabel Boncompte</h1>
 
     <div class="row">
       <div class="column text-column">
-        <h2 class="title is-2 has-text-centered">QUI SÓC</h2>
-        <p>Estic interessada en practicar la pintura i la ceràmica per continuar aprenent, i per deixar testimoni d’allò que m’interessa.</p> 
-        <br> <p>Les dues línies de treball actuals són:</p>
-        <br>
-        <p>En pintura el retrat i la natura </p> 
-        <p>En ceràmica l’experimentació en el torn</p>
+        <h2 class="title is-2 has-text-centered">{{ t('home.quisoc') }}</h2>
+        <p>{{ t('home.intro') }}</p>
+        <p class="mt-4">{{ t('home.linies') }}</p>
+        <p>{{ t('home.linia1') }}</p>
+        <p>{{ t('home.linia2') }}</p>
       </div>
       <div class="column image-column">
         <img src="../assets/obra/Retrats/Moment.jpg?format=webp&w=1200&quality=85" class="full-width-image" alt="Moment — retrat a l'oli d'Isabel Boncompte" />
@@ -20,20 +19,19 @@
 </template>
 
 <script>
+import { t, locale } from '../i18n.js'
+
 export default {
-  data() {
-    return {};
+  computed: {
+    locale() {
+      return locale.value
+    },
   },
+  methods: { t },
 };
 </script>
 
 <style scoped>
-
-@media only screen and (max-width: 768px) {
-  .smaller-text-on-mobile {
-    font-size: 0.875rem; /* reduced font size on smaller screens */
-  }
-}
 
 .row {
   display: flex;
@@ -47,6 +45,13 @@ export default {
 
 .image-column {
   order: 2;
+}
+
+.image-column img {
+  max-height: 70vh;
+  width: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .text-column {

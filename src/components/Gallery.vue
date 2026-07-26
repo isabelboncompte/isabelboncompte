@@ -7,7 +7,7 @@
           v-if="!isPhoneScreen"
           class="style-toggle-btn"
           type="button"
-          aria-label="Canvia entre vista de graella i de llista"
+          :aria-label="t('gallery.viewToggle')"
           @click="toggleStyle"
         >
           <font-awesome-icon :icon="iconName" aria-hidden="true" />
@@ -24,9 +24,9 @@
         </router-link>
         <div v-if="style === 'vertical'" class="vertical-text">
           <h6 class="title is-4 image-title" v-if="image && image.name">{{ image.name }}</h6>
-          <p class="image-description" v-if="image.year">Any: {{ image.year }}</p>
-          <p class="image-description" v-if="image.technique">Tècnica: {{ image.technique }}</p>
-          <p class="image-description" v-if="image.size">Mida: {{ image.size.height }} x {{ image.size.width }}</p>
+          <p class="image-description" v-if="image.year">{{ t('gallery.any') }}: {{ image.year }}</p>
+          <p class="image-description" v-if="image.technique">{{ t('gallery.tecnica') }}: {{ tTechnique(image.technique) }}</p>
+          <p class="image-description" v-if="image.size">{{ t('gallery.mida') }}: {{ image.size.height }} x {{ image.size.width }}</p>
         </div>
       </div>
 
@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import { t, tTechnique, locale } from '../i18n.js'
+
 // All artwork is resized to 900px-wide WebP at build time and served from the
 // site itself instead of full-resolution JPGs from raw.githubusercontent.com.
 const optimized = import.meta.glob('../assets/obra/**/*.jpg', {
@@ -68,7 +70,14 @@ export default {
     window.addEventListener('resize', this.updateIsPhoneScreen);
     this.updateIsPhoneScreen();
   },
+  computed: {
+    locale() {
+      return locale.value
+    },
+  },
   methods: {
+    t,
+    tTechnique,
     resolve(imagePath) {
       // JSON paths look like "/assets/obra/Botànica/Rosella.jpg"
       return optimized[`..${imagePath}`];
@@ -93,13 +102,25 @@ export default {
 
 <style scoped>
 .title {
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  margin: 2rem auto 1.5rem;
 }
 
 .gallery {
-  column-count: 3; /* adjust the number of columns as needed */
-  column-gap: 8px; /* adjust the gap as needed */
-  row-gap: 10px;
+  column-count: 3;
+  column-gap: 1.25rem;
+}
+
+.gallery-item {
+  margin-bottom: 1.25rem;
+  break-inside: avoid;
+}
+
+@media (max-width: 1100px) {
+  .gallery {
+    column-count: 2;
+  }
 }
 
 .gallery.vertical {
@@ -119,8 +140,13 @@ export default {
 }
 
 .gallery-item {
-  display: inline-block;
+  display: block;
   width: 100%;
+  position: relative;
+}
+
+.gallery-item a {
+  display: block;
   position: relative;
 }
 
@@ -129,6 +155,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
   color: #3d3d3d;
   font-size: 1.2rem;
   text-align: center;
@@ -188,20 +215,20 @@ a:hover {
 .gallery.vertical .gallery-item .image-name {
   margin-top: 0.5rem;
   text-align: center;
-  color: #333;
+  color: var(--color-ink);
 }
 
 .gallery.vertical .gallery-item .image-description {
   margin-top: 0;
   text-align: center;
-  color: #333;
+  color: var(--color-ink);
 }
 
 .gallery.vertical .gallery-item .image-title {
   text-align: center;
   margin-bottom: 8px;
   margin-top: 4px;
-  color: #333;
+  color: var(--color-ink);
 }
 
 .row {

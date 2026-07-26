@@ -1,5 +1,6 @@
 <script>
 import ceramica from '../assets/obra/ceramica.json'
+import { t, locale } from '../i18n.js'
 
 const thumbs = import.meta.glob('../assets/obra/Botiga/*.jpg', {
   eager: true,
@@ -28,6 +29,9 @@ export default {
     }
   },
   computed: {
+    locale() {
+      return locale.value
+    },
     categories() {
       const order = []
       const groups = {}
@@ -93,10 +97,11 @@ export default {
       if (e.key === 'ArrowLeft') this.next(-1)
     },
     priceLabel(piece) {
-      if (piece.sold) return 'Venuda'
+      if (piece.sold) return t('shop.sold')
       if (piece.price) return `${piece.price} €`
-      return 'Preu a la botiga'
+      return t('shop.priceAtShop')
     },
+    t,
   },
   mounted() {
     window.addEventListener('keydown', this.onKey)
@@ -112,17 +117,17 @@ export default {
 <template>
   <div class="ceramica">
     <header class="intro">
-      <h1 class="intro-title">Ceràmica</h1>
+      <h1 class="intro-title">{{ t('shop.title') }}</h1>
       <p class="intro-note">
-        Les peces es venen exclusivament a la botiga.
+        {{ t('shop.note') }}
       </p>
       <p class="intro-contact">
-        Per a consultes: <a href="mailto:info@isabelboncompte.com">info@isabelboncompte.com</a>
+        {{ t('shop.contact') }} <a href="mailto:info@isabelboncompte.com">info@isabelboncompte.com</a>
       </p>
     </header>
 
     <section v-for="category in categories" :key="category.name" class="category">
-      <h2 class="category-title">{{ category.name }}</h2>
+      <h2 class="category-title">{{ t('cat.' + category.name) }}</h2>
       <div class="grid">
         <figure
           v-for="piece in category.pieces"
@@ -150,7 +155,7 @@ export default {
             <div v-if="piece.material || piece.esmalt" class="piece-details">
               <span v-if="piece.material">{{ piece.material }}</span>
               <span v-if="piece.material && piece.esmalt"> · </span>
-              <span v-if="piece.esmalt">Esmalt {{ piece.esmalt }}</span>
+              <span v-if="piece.esmalt">{{ t('shop.esmalt') }} {{ piece.esmalt }}</span>
             </div>
           </figcaption>
         </figure>
@@ -167,11 +172,11 @@ export default {
       @touchstart.passive="onTouchStart"
       @touchend.passive="onTouchEnd"
     >
-      <button ref="closeBtn" class="lightbox-close" aria-label="Tancar" @click="close">×</button>
+      <button ref="closeBtn" class="lightbox-close" :aria-label="t('shop.close')" @click="close">×</button>
       <button
         v-if="viewer.piece.images.length > 1"
         class="lightbox-arrow left"
-        aria-label="Anterior"
+        :aria-label="t('shop.prev')"
         @click="next(-1)"
       >‹</button>
       <div class="lightbox-content">
@@ -179,7 +184,7 @@ export default {
         <div class="lightbox-caption">
           <span class="piece-name">{{ viewer.piece.name }}</span>
           <span v-if="viewer.piece.material"> · {{ viewer.piece.material }}</span>
-          <span v-if="viewer.piece.esmalt"> · Esmalt {{ viewer.piece.esmalt }}</span>
+          <span v-if="viewer.piece.esmalt"> · {{ t('shop.esmalt') }} {{ viewer.piece.esmalt }}</span>
           <span class="piece-price" :class="{ sold: viewer.piece.sold }">
             {{ priceLabel(viewer.piece) }}
           </span>
@@ -191,7 +196,7 @@ export default {
       <button
         v-if="viewer.piece.images.length > 1"
         class="lightbox-arrow right"
-        aria-label="Següent"
+        :aria-label="t('shop.next')"
         @click="next(1)"
       >›</button>
     </div>
@@ -215,7 +220,7 @@ export default {
   font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #2c2c2c;
+  color: var(--color-ink);
 }
 
 .intro-text {
@@ -277,7 +282,7 @@ export default {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: #f4f1ec;
+  background: #f7f5f0;
 }
 
 .peca-image img {
