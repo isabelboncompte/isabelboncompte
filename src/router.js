@@ -48,4 +48,12 @@ router.beforeEach((to) => {
   }
 })
 
+// Keep the tab title in sync with the page (crawlers executing JS see it too).
+router.afterEach((to) => {
+  const name = to.params?.slug ? series[to.params.slug]?.title : (typeof to.name === 'string' ? to.name : null)
+  document.title = name && name !== 'Home'
+    ? `${name.charAt(0).toUpperCase()}${name.slice(1)} — Isabel Boncompte`
+    : 'Isabel Boncompte — Pintura i Ceràmica'
+})
+
 export default router
