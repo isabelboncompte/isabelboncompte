@@ -139,8 +139,13 @@ export default {
 }
 
 .gallery-item {
-  display: inline-block;
+  display: block;
   width: 100%;
+  position: relative;
+}
+
+.gallery-item a {
+  display: block;
   position: relative;
 }
 
@@ -149,6 +154,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
   color: #3d3d3d;
   font-size: 1.2rem;
   text-align: center;
