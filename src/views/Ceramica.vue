@@ -22,6 +22,9 @@ export default {
     return {
       pieces: ceramica,
       viewer: null, // { piece, imageIndex }
+      touchX: null,
+      touchY: null,
+      returnFocusEl: null,
     }
   },
   computed: {
@@ -46,15 +49,42 @@ export default {
       return assetFor(fulls, piece.images[index])
     },
     open(piece) {
+      this.returnFocusEl = document.activeElement
       this.viewer = { piece, imageIndex: 0 }
+      document.body.style.overflow = 'hidden'
+      document.documentElement.style.overflow = 'hidden'
+      this.preload(piece, 1)
+      this.$nextTick(() => this.$refs.closeBtn?.focus())
     },
     close() {
       this.viewer = null
+      document.body.style.overflow = ''
+      document.documentElement.style.overflow = ''
+      this.returnFocusEl?.focus?.()
+      this.returnFocusEl = null
     },
     next(delta) {
       if (!this.viewer) return
       const n = this.viewer.piece.images.length
       this.viewer.imageIndex = (this.viewer.imageIndex + delta + n) % n
+      this.preload(this.viewer.piece, this.viewer.imageIndex + delta)
+    },
+    preload(piece, index) {
+      const n = piece.images.length
+      if (n < 2) return
+      const img = new Image()
+      img.src = this.full(piece, ((index % n) + n) % n)
+    },
+    onTouchStart(e) {
+      this.touchX = e.changedTouches[0].clientX
+      this.touchY = e.changedTouches[0].clientY
+    },
+    onTouchEnd(e) {
+      if (this.touchX === null) return
+      const dx = e.changedTouches[0].clientX - this.touchX
+      const dy = e.changedTouches[0].clientY - this.touchY
+      this.touchX = this.touchY = null
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) this.next(dx < 0 ? 1 : -1)
     },
     onKey(e) {
       if (!this.viewer) return
@@ -73,6 +103,8 @@ export default {
   },
   beforeUnmount() {
     window.removeEventListener('keydown', this.onKey)
+    document.body.style.overflow = ''
+    document.documentElement.style.overflow = ''
   },
 }
 </script>
@@ -84,6 +116,9 @@ export default {
       <p class="intro-note">
         Les peces es venen exclusivament a la botiga.
       </p>
+      <p class="intro-contact">
+        Per a consultes: <a href="mailto:info@isabelboncompte.com">info@isabelboncompte.com</a>
+      </p>
     </header>
 
     <section v-for="category in categories" :key="category.name" class="category">
@@ -94,7 +129,12 @@ export default {
           :key="piece.name"
           class="peca"
           :class="{ 'is-sold': piece.sold }"
+          tabindex="0"
+          role="button"
+          :aria-label="piece.name"
           @click="open(piece)"
+          @keydown.enter.prevent="open(piece)"
+          @keydown.space.prevent="open(piece)"
         >
           <div class="peca-image">
             <img :src="thumb(piece)" :alt="piece.name" loading="lazy" />
@@ -117,8 +157,17 @@ export default {
       </div>
     </section>
 
-    <div v-if="viewer" class="lightbox" @click.self="close">
-      <button class="lightbox-close" aria-label="Tancar" @click="close">×</button>
+    <div
+      v-if="viewer"
+      class="lightbox"
+      role="dialog"
+      aria-modal="true"
+      :aria-label="viewer.piece.name"
+      @click.self="close"
+      @touchstart.passive="onTouchStart"
+      @touchend.passive="onTouchEnd"
+    >
+      <button ref="closeBtn" class="lightbox-close" aria-label="Tancar" @click="close">×</button>
       <button
         v-if="viewer.piece.images.length > 1"
         class="lightbox-arrow left"
@@ -133,6 +182,9 @@ export default {
           <span v-if="viewer.piece.esmalt"> · Esmalt {{ viewer.piece.esmalt }}</span>
           <span class="piece-price" :class="{ sold: viewer.piece.sold }">
             {{ priceLabel(viewer.piece) }}
+          </span>
+          <span v-if="viewer.piece.images.length > 1" class="lightbox-count">
+            {{ viewer.imageIndex + 1 }} / {{ viewer.piece.images.length }}
           </span>
         </div>
       </div>
@@ -189,7 +241,7 @@ export default {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #8a8a8a;
+  color: #6f6f6f;
   border-bottom: 1px solid #e5e0d8;
   padding-bottom: 0.6rem;
   margin-bottom: 1.75rem;
@@ -204,6 +256,21 @@ export default {
 .peca {
   margin: 0;
   cursor: pointer;
+}
+
+.peca:focus-visible {
+  outline: 2px solid #965c00;
+  outline-offset: 3px;
+}
+
+.intro-contact {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.intro-contact a {
+  color: #965c00;
 }
 
 .peca-image {
@@ -254,7 +321,7 @@ export default {
 .piece-details {
   margin-top: 0.25rem;
   font-size: 0.8rem;
-  color: #8a8a8a;
+  color: #6f6f6f;
 }
 
 .piece-name {
@@ -269,7 +336,7 @@ export default {
 }
 
 .piece-price.sold {
-  color: #b0b0b0;
+  color: #767676;
   font-style: italic;
 }
 
@@ -281,6 +348,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  overscroll-behavior: contain;
 }
 
 .lightbox-content {
@@ -327,6 +395,19 @@ export default {
   cursor: pointer;
   line-height: 1;
   padding: 0.5rem;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.lightbox-close:focus-visible,
+.lightbox-arrow:focus-visible {
+  outline: 2px solid #d9a95c;
+  outline-offset: 2px;
+}
+
+.lightbox-count {
+  color: #b8b2a8;
+  font-size: 0.85rem;
 }
 
 .lightbox-close {
@@ -361,7 +442,15 @@ export default {
 
   .lightbox-arrow {
     top: auto;
-    bottom: 1rem;
+    bottom: 1.25rem;
+  }
+
+  .lightbox-arrow.left {
+    left: 1.25rem;
+  }
+
+  .lightbox-arrow.right {
+    right: 1.25rem;
   }
 }
 </style>
