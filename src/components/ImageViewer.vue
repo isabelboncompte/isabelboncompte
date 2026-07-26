@@ -2,11 +2,11 @@
   <b-skeleton v-if="!imageLoaded" width="100%" height="80vh"></b-skeleton>
 
   <div v-if="imageLoaded" class="imageviewer">
-      <button class="back-button" @click="$router.go(-1)">
+      <button class="back-button" aria-label="Tornar enrere" @click="$router.go(-1)">
       <font-awesome-icon icon="fa-solid fa-arrow-left" />
       </button>
     <div class="image-container">
-      <img :src="currentImage" />
+      <img :src="currentImage" :alt="response?.name" />
     </div>
     <h6 class="title is-5 title-margin" v-if="response && response.name">{{ response.name }}</h6>
     <p class="description" v-if="response && response.year"><strong>Any:</strong> {{ response.year }}</p>
@@ -86,13 +86,13 @@
 
 
 .back-button {
-  top: 0px;
   background-color: transparent;
   border: none;
   font-size: 20px;
   cursor: pointer;
-  padding: 0px;
-  margin: 0px;
+  padding: 12px;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .image-container img {

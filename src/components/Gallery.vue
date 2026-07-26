@@ -3,8 +3,15 @@
     <div>
       <div class="row">
         <h1 class="title">{{ title }}</h1>
-        <font-awesome-icon  v-if="!isPhoneScreen" :icon="iconName" @click="toggleStyle">
-        </font-awesome-icon>
+        <button
+          v-if="!isPhoneScreen"
+          class="style-toggle-btn"
+          type="button"
+          aria-label="Canvia entre vista de graella i de llista"
+          @click="toggleStyle"
+        >
+          <font-awesome-icon :icon="iconName" aria-hidden="true" />
+        </button>
       </div>
     </div>
 
@@ -78,7 +85,7 @@ export default {
       }
     },
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener('resize', this.updateIsPhoneScreen);
   }
 };
@@ -87,23 +94,6 @@ export default {
 <style scoped>
 .title {
   margin-bottom: 1rem;
-}
-
-.style-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.25rem;
-  background-color: #4CAF50;
-  color: #fff;
-  cursor: pointer;
-}
-
-.style-toggle:hover {
-  background-color: #3e8e41;
 }
 
 .gallery {
@@ -162,8 +152,24 @@ export default {
   opacity: 0.2;
 }
 
-.gallery-item:hover .image-name {
+.gallery-item:hover .image-name,
+.gallery-item:focus-within .image-name {
   opacity: 1;
+}
+
+.gallery-item a:focus-visible {
+  outline: 2px solid #965c00;
+  outline-offset: 2px;
+}
+
+.style-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  min-width: 44px;
+  min-height: 44px;
+  color: inherit;
 }
 
 .gallery.vertical .gallery-item:hover img {
@@ -176,7 +182,6 @@ export default {
 
 a:hover {
   background-color: transparent;
-  outline: none;
   box-shadow: none;
 }
 
