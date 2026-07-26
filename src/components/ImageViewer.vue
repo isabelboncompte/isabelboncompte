@@ -28,9 +28,9 @@
 
     <div class="work-label">
       <h1 class="work-title">{{ work.name }}</h1>
-      <p v-if="work.year" class="work-year">{{ work.year }}</p>
-      <p v-if="work.technique" class="work-technique">{{ tTechnique(work.technique) }}</p>
-      <p v-if="work.size" class="work-size">{{ work.size.width }} × {{ work.size.height }} cm</p>
+      <p v-if="work.year" class="work-year"><span class="label">{{ t('gallery.any') }}</span> {{ work.year }}</p>
+      <p v-if="work.technique" class="work-technique"><span class="label">{{ t('gallery.tecnica') }}</span> {{ tTechnique(work.technique) }}</p>
+      <p v-if="work.size" class="work-size"><span class="label">{{ t('gallery.mida') }}</span> {{ work.size.width }} × {{ work.size.height }} cm</p>
     </div>
   </div>
 </template>
@@ -215,23 +215,32 @@ export default {
   margin: 0;
 }
 
-.work-year {
+.work-year,
+.work-technique,
+.work-size {
   margin: 0.3rem 0 0;
   font-size: 0.9rem;
   color: var(--color-muted);
 }
 
 .work-technique {
-  margin: 0.1rem 0 0;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: var(--color-muted);
+  margin-top: 0.1rem;
 }
 
 .work-size {
-  margin: 0.1rem 0 0;
+  margin-top: 0.1rem;
   font-size: 0.85rem;
-  color: var(--color-muted);
+}
+
+.work-label .label {
+  display: inline-block;
+  min-width: 4.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9a958c;
+  margin-right: 0.4rem;
 }
 
 @media (max-width: 768px) {
