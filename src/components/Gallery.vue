@@ -146,14 +146,12 @@ export default {
 
 .image-name {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.5rem 0.75rem;
-  background: rgba(20, 18, 15, 0.65);
-  color: #f4f1ec;
-  font-size: 0.9rem;
-  text-align: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3d3d3d;
+  font-size: 1.2rem;
+  text-align: center;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   pointer-events: none;
@@ -171,7 +169,7 @@ export default {
 }
 
 .gallery-item:hover img {
-  opacity: 0.92;
+  opacity: 0.2;
 }
 
 .gallery-item:hover .image-name,
